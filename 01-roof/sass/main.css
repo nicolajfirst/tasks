@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-family: "RoadRadio"; }
+
+html {
+  font-size: 62.5%; }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 113rem;
+  position: relative; }
+
+.nav::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.nav__list {
+  width: 66.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media screen and (max-width: 780px) {
+    .nav__list {
+      flex-direction: column;
+      background: rgba(255, 129, 24, 0.5);
+      width: 108%;
+      margin-left: -4rem;
+      justify-content: center;
+      z-index: 10; } }
+
+.nav__item {
+  line-height: 2.5rem;
+  z-index: 10; }
+  @media screen and (max-width: 780px) {
+    .nav__item {
+      display: inline-flex;
+      justify-content: center;
+      width: 80%;
+      z-index: 10; }
+      .nav__item:not(:last-child) {
+        border-bottom: 1px dashed #fff; }
+      .nav__item:hover {
+        border-bottom: 1px dashed #FF8118; } }
+
+.nav__left {
+  width: 8.33%;
+  float: left; }
+
+.nav__img {
+  width: 100%; }
+
+.nav__right {
+  width: 89.23%;
+  float: right; }
+
+.nav__svg {
+  padding: .3rem 0; }
+
+.nav__link {
+  font-size: 1.6rem;
+  color: #fff;
+  line-height: 100%;
+  transition: all .2s; }
+  .nav__link:first-child {
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem; }
+    @media screen and (max-width: 780px) {
+      .nav__link:first-child {
+        padding: 2rem; } }
+  @media screen and (max-width: 780px) {
+    .nav__link {
+      padding: 2rem; }
+      .nav__link:hover {
+        color: #FF8118; } }
+
+.nav__top {
+  padding: 2rem 0;
+  display: flex;
+  border-bottom: 1px dashed #fff; }
+  @media screen and (max-width: 780px) {
+    .nav__top {
+      flex-direction: column; } }
+
+.nav__bottom {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between; }
+
+.nav__bottom-left {
+  display: flex;
+  width: 50rem; }
+  @media screen and (max-width: 780px) {
+    .nav__bottom-left {
+      display: flex;
+      width: 70%;
+      justify-content: flex-start; } }
+
+.nav__bottom-right {
+  z-index: 5; }
+  @media screen and (max-width: 780px) {
+    .nav__bottom-right {
+      width: 40%;
+      margin-top: -.5rem;
+      padding: 0 1rem; } }
+
+.nav__number {
+  display: block;
+  vertical-align: middle;
+  padding: 5% 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  z-index: 10; }
+  @media screen and (max-width: 780px) {
+    .nav__number {
+      padding: 2% 0;
+      font-size: 1.4rem; } }
+  @media screen and (max-width: 480px) {
+    .nav__number {
+      padding: 2% 0;
+      font-size: 1.2rem; } }
+
+/*Orange Border*/
+.frame {
+  position: absolute;
+  top: 22rem;
+  left: 0;
+  width: 100%;
+  height: 58rem;
+  border: 9px solid #FF8118; }
+  @media screen and (max-width: 780px) {
+    .frame {
+      width: 97%;
+      margin: 0 1rem; } }
+
+.arrow::before {
+  position: absolute;
+  top: 22rem;
+  left: -1.1rem;
+  color: greenyellow;
+  z-index: 20; }
+
+.arrow {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: .2rem;
+  position: absolute;
+  top: 23rem;
+  left: -1.1rem;
+  width: 1.7rem;
+  height: 7rem;
+  z-index: 5; }
+  @media screen and (max-width: 780px) {
+    .arrow {
+      top: 1rem;
+      left: 1rem;
+      z-index: 15;
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 3px; } }
+  .arrow__img {
+    transition: all .2s;
+    transform: scale(1.01); }
+  .arrow__img:hover {
+    color: #FF8118;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2); }
+
+@media screen and (max-width: 780px) {
+  .nav__item:not(:last-child) {
+    display: none; } }
+.header__burger {
+  padding: 3% 2%;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: none;
+  z-index: 10; }
+  @media screen and (max-width: 780px) {
+    .header__burger {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 2rem; } }
+
+.header__strip {
+  display: block;
+  width: 2rem;
+  height: 2px;
+  background-color: #fff; }
+
+.header__strip::before {
+  top: -.7rem; }
+
+.header__strip::after {
+  bottom: -.5rem; }
+
+.header__strip::before,
+.header__strip::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: inherit;
+  position: relative; }
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  width: 47%;
+  height: 4.5rem;
+  border-radius: .5rem;
+  padding: 2.5% 0;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .2s;
+  z-index: 5; }
+  @media screen and (max-width: 780px) {
+    .btn:link,
+    .btn:visited {
+      display: inline-block;
+      width: 35%;
+      height: 3.5rem;
+      font-size: 1.2rem; } }
+  @media screen and (max-width: 480px) {
+    .btn:link,
+    .btn:visited {
+      font-size: 1.1rem; } }
+
+.btn--orange {
+  background: #FF8118;
+  color: #fff;
+  margin-right: 6%; }
+
+.btn--orange:hover {
+  background: #fff;
+  color: #FF8118; }
+
+.btn--white {
+  background: #fff;
+  color: #FF8118; }
+
+.btn--white:hover {
+  background: #FF8118;
+  color: #fff; }
+
+/*---Field FORM---*/
+input, button {
+  border: 0; }
+
+.nav__search {
+  width: 27%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1.4rem;
+  display: inline-block;
+  margin-right: 21%;
+  padding: 1rem;
+  z-index: 5; }
+  @media screen and (max-width: 780px) {
+    .nav__search {
+      width: 87%;
+      margin-right: 0;
+      padding: .6rem;
+      margin-bottom: 2rem; } }
+  @media screen and (max-width: 480px) {
+    .nav__search {
+      width: 80%;
+      margin-right: 0;
+      padding: .3rem;
+      margin-bottom: 2rem; } }
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.form__button {
+  outline: none;
+  width: 15%;
+  height: 2.3rem;
+  background-color: rgba(0, 0, 0, 0.01);
+  padding-right: .5rem; }
+
+.nav__magnify {
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem; }
+
+.fas {
+  font-size: 2rem; }
+  @media screen and (max-width: 780px) {
+    .fas {
+      font-size: 1.8rem; } }
+
+.fa-search::before {
+  content: "\f002";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #fff; }
+
+.fa-search:hover::before {
+  color: rgba(255, 255, 255, 0.8); }
+
+.form__button:hover i {
+  color: #ccc; }
+
+.form__text {
+  width: 85%;
+  font-family: "RoadRadio Light";
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.01);
+  color: #fff; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.25); }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.25); }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(255, 255, 255, 0.25); }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.25); }
+
+@font-face {
+  font-family: "RoadRadio";
+  src: url("../fonts/font-radio/RoadRadio.ttf");
+  src: url("../fonts/font-radio/RoadRadio-Light.ttf"); }
+@font-face {
+  font-family: "RoadRadio Light";
+  src: url("../fonts/font-radio/RoadRadio-Light.ttf"); }
+.header {
+  height: 80rem;
+  background-image: url("../img/dom-bg.png");
+  background-size: 140% 100%;
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  position: relative;
+  z-index: 0; }
+
+.frame__house {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 80rem;
+  background-image: url("../img/dom.png");
+  background-size: 140% 100%;
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  z-index: 1; }
+
+/*# sourceMappingURL=main.css.map */

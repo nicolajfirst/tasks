@@ -1,0 +1,47 @@
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  width: 47%;
+  height: 4.5rem;
+  border-radius: .5rem;
+  padding: 2.5% 0;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .2s;
+  z-index: 5;
+
+  @media screen and (max-width: 780px) {
+
+      display: inline-block;
+      width: 35%;
+      height: 3.5rem;
+      font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+      font-size: 1.1rem;
+  }
+}
+
+.btn--orange {
+  background: $orange;
+  color: #fff;
+  margin-right: 6%;
+}
+
+.btn--orange:hover {
+  background: #fff;
+  color: $orange;
+}
+
+.btn--white {
+  background: #fff;
+  color: $orange;
+}
+
+.btn--white:hover {
+  background: $orange;
+  color: #fff;
+}

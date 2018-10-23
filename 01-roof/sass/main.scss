@@ -1,0 +1,42 @@
+@import "settings/base";
+@import "settings/variable";
+
+@import "components/header";
+@import "components/button";
+@import "components/form";
+
+
+@font-face {
+  font-family: "RoadRadio";
+  src: url("../fonts/font-radio/RoadRadio.ttf");
+  src: url("../fonts/font-radio/RoadRadio-Light.ttf");
+}
+
+@font-face {
+  font-family: "RoadRadio Light";
+  src: url("../fonts/font-radio/RoadRadio-Light.ttf");
+}
+
+.header {
+  height: 80rem;
+  background-image: url('../img/dom-bg.png');
+  background-size: 140% 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  position: relative;
+  z-index: 0;
+}
+
+.frame__house {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 80rem;
+  background-image: url("../img/dom.png");
+  background-size: 140% 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  z-index: 1;
+}
+
+

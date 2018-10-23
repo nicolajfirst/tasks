@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/icons/favicon.ico">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Главная</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <div class="nav__left">
+                <img class="nav__img" src="img/icons/logo.png" alt="Logo">
+            </div>
+
+            <div class="nav__right">
+                <div class="nav__top">
+                    <div class="nav__search">
+                        <form class="form" action="" id="form1">
+                            <button type="submit" class="form__button" form="form1" value="Submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <input class="form__text" type="text" placeholder="Введите..">
+                        </form>
+                    </div>
+                    <ul class="nav__list js-list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="/calculator">
+                                <svg class="nav__svg" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="0.333in" height="0.333in">
+                                    <image x="0px" y="0px" width="24px" height="24px"
+                                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiChARKCTxS9wrAAABD0lEQVQ4y62UvU4CURBGzxpoaMRYIxSUhGcw2d7Gbp/AR5CON7CgsLWRV6Cz39hRQeMTGMi2a8Kx2J/s4iayhK+auXdO5v7MDCJGxqZW1bdf81NjIxHEhX91DGRaCEZ6MqARxqUzdPgvEAemdMl0A+wb7Kp+Onn4iISkIXBEUtp7oHtFSwVa2qccidYZOhV7fwpwxh36jesJcH2hDDauX+6VCmDNjAMHZqxr+0vu2CIv5Y/nRTUVQ0NxWiu+dwd++iA+ZoEFsHEs4tjNUbV+ORFHruvA0p6IPZc14MNb8d7vor7JWzM0cO7cwLACbO2IT745yDOnRQPtXKm6clfL8OxrfpMMiM9o0dZDoOWY+QUViwrQyZjz3AAAAABJRU5ErkJggg=="/>
+                                </svg>
+                                калькулятор
+                            </a>
+                        </li>
+                        <li class="nav__item js--item">
+                            <a class="nav__link" href="/o-kompanii">о компании</a>
+                        </li>
+                        <li class="nav__item js--item">
+                            <a class="nav__link" href="/uslugi">услуги</a>
+                        </li>
+                        <li class="nav__item js--item">
+                            <a class="nav__link" href="/blog">блог</a>
+                        </li>
+                        <li class="nav__item js--item">
+                            <a class="nav__link" href="/contacts">контакты</a>
+                        </li>
+                        <li class="header__burger js--burger">
+                            <a class="header__strip" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__bottom">
+                    <div class="nav__bottom-left">
+                        <a href="#" class="btn btn--orange">каталог продукции</a>
+                        <a href="#" class="btn btn--white">интернет-магазин</a>
+                    </div>
+                    <div class="nav__bottom-right">
+                        <div class="nav__number">+38 (099) 375-59-16</div>
+                        <div class="nav__number">+38 (099) 375-59-16</div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <div class="frame">
+                <!--<img src="img/dom.png" alt="House">-->
+
+                <div class="arrow">
+                    <svg class="frame__array frame__arrow--1"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         width="13px" height="25px">
+                        <image class="arrow__img" x="0px" y="0px" width="13px" height="25px"
+                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAZCAMAAADdclTDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEX////jgCnjgCnjgCjkgCnjgCjjgCnkgCnjgCnkgCnjgCjjgCnkgCnjgCjjfyjkgCnkgCnkgCnkgCnkgCnkgCnkgCnkgCnjgCnjgCjkgCnjgCnjgCjjgCjkgCnjgCnkgCnkgCnjgCnjgCjjgCnjgCjkgCnjgCnjgCjjfyj///8sSk9jAAAAJXRSTlMASOw7N/bxLSjr5yMc49wYEtXSDwPHxAMEe4CwgIB6BGBgYFVVh3HjBgAAAAFiS0dEAIgFHUgAAAAHdElNRQfiChMLCw0OVLpuAAAAjklEQVQY03WQVw7DMAxD1b33Tjoct6Ry/xNWblFH+agAA3qgRAoWSdXp9iRXf4Dh6AfjCcHp7AvzBajkcpVgvbEeJLc7kf0BqdTe8STnS1GU1pbX2/3x2QxAHXJCZXtVQwBjpmgubtIsm8lIwGnaIttznkqNf/IC1FPNlsaWp7pbkhYd+TzTnMvTPuaVmjcdlRLcNmiv8AAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    <svg class="frame__array frame__arrow--2"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         width="13px" height="25px">
+                        <image class="arrow__img" x="0px" y="0px" width="13px" height="25px"
+                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAZCAMAAADdclTDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAe1BMVEX////kgCnjgCjjgCjkgCnjgCnkgCnjgCnkgCnkgCnjgCnjgCnjgCnjgCjkgCnkgCnjgCnjgCnkgCnjgCnjgCnkgCnjgCjkgCnjgCnjgCnkgCnkgCnkgCnjgCnjgCnkgCnkgCnkgCnjgCnkgCnjgCjjgCnkgCnjfyj///8awybhAAAAJHRSTlMAVVVgYGAEeoCwsIB7BAPExw/S1RIY3OMcI+frKC3x9jc77EiLWUsPAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+IKEwsNBCHSpUwAAACNSURBVBjTVZDpEsIwCITREo1Xve+jHrB9/zcU6yQl/Ml8s8sCIbIaiGJIqSooqkwsUM4UAAmOvNP6pKeg2rIn9MSteIJo8Cla9DmNtXCWEwQIvs/tyShvSJmjcYwTBaazOF9QvTTBdlHoqiZabwzsY2S7+3n3h045nv4h54vB9ZYy7w80zzyBXu9P934B0gcPB1mwevEAAAAASUVORK5CYII="/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    <div class="frame__house"></div>
+</header>
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "RoadRadio";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 113rem;
+  position: relative;
+}

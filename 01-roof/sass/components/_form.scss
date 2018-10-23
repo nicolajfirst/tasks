@@ -1,0 +1,102 @@
+/*---Field FORM---*/
+
+input, button {
+  border: 0;
+}
+
+.nav__search {
+  width: 27%;
+  background-color: rgba(255,255,255, .2);
+  border-radius: 1.4rem;
+  display: inline-block;
+  margin-right: 21%;
+  padding: 1rem;
+  z-index: 5;
+
+  @media screen and (max-width: 780px) {
+    width: 87%;
+    margin-right: 0;
+    padding: .6rem;
+    margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 80%;
+    margin-right: 0;
+    padding: .3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__button {
+  outline: none;
+  width: 15%;
+  height: 2.3rem;
+  background-color: rgba(0,0,0, .01);
+  padding-right: .5rem;
+}
+
+
+.nav__magnify {
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+
+  //@media screen and (max-width: 780px) {
+  //  width: 2.2rem;
+  //  height: 2.2rem;
+  //  padding: .6rem;
+  //}
+}
+
+.fas {
+  font-size: 2rem;
+
+  @media screen and (max-width: 780px) {
+    font-size: 1.8rem;
+  }
+}
+
+.fa-search::before {
+  content: "\f002";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.fa-search:hover::before {
+  color: rgba(255,255,255, .8);
+}
+
+.form__button:hover i {
+  color: #ccc;
+}
+
+.form__text {
+  width: 85%;
+  font-family: "RoadRadio Light";
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  background-color: rgba(0,0,0, .01);
+  color: #fff;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255,255,255, .25);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255,255,255, .25);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255,255,255, .25);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255,255,255, .25);
+}
