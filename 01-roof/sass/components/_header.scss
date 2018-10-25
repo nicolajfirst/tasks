@@ -3,7 +3,6 @@
   content: "";
   display: block;
   clear: both;
-
 }
 
 .nav__list {
@@ -163,15 +162,7 @@
   }
 }
 
-.arrow::before {
-  position: absolute;
-  top: 22rem;
-  left: -1.1rem;
-  color: greenyellow;
-  z-index: 20;
-}
-
-.arrow {
+.arrow-v {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -199,7 +190,7 @@
   &__img:hover {
     color: $orange;
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.05);
     box-shadow: 0 2rem 4rem rgba(0,0,0, .2);
   }
 }

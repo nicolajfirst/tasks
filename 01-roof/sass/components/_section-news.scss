@@ -1,0 +1,25 @@
+.section-news {
+  padding-top: 10rem;
+}
+
+.news {
+
+  &__text {
+
+  }
+
+  &__wrap{
+
+  }
+
+  &__block {
+    width: 31rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.3rem;
+  }
+
+}
