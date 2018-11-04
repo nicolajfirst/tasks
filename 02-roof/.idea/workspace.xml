@@ -6,8 +6,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../01-roof/index.html" afterPath="$PROJECT_DIR$/../01-roof/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../01-roof/sass/components/_button.scss" afterPath="$PROJECT_DIR$/../01-roof/sass/components/_button.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/components/_header.scss" afterPath="$PROJECT_DIR$/sass/components/_header.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/components/_section-category.scss" afterPath="$PROJECT_DIR$/sass/components/_section-category.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/components/_section-profi.scss" afterPath="$PROJECT_DIR$/sass/components/_section-profi.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/main.css" afterPath="$PROJECT_DIR$/sass/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/main.css.map" afterPath="$PROJECT_DIR$/sass/main.css.map" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,21 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/components/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+            <state relative-caret-position="331">
+              <caret line="177" column="44" lean-forward="false" selection-start-line="177" selection-start-column="44" selection-end-line="177" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_section-category.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_section-category.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/components/_section-category.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+            <state relative-caret-position="170">
+              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -116,8 +119,8 @@
       <file leaf-file-name="_arrows.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/components/_arrows.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+            <state relative-caret-position="170">
+              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -126,8 +129,8 @@
       <file leaf-file-name="_section-profi.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/components/_section-profi.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="170" column="13" lean-forward="false" selection-start-line="170" selection-start-column="13" selection-end-line="170" selection-end-column="13" />
+            <state relative-caret-position="258">
+              <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,17 +168,17 @@
         <option value="$PROJECT_DIR$/img/calendar2.svg" />
         <option value="$PROJECT_DIR$/img/calendar.svg" />
         <option value="$PROJECT_DIR$/sass/components/_section-private.scss" />
-        <option value="$PROJECT_DIR$/sass/components/_section-profi.scss" />
         <option value="$PROJECT_DIR$/sass/components/_form.scss" />
         <option value="$PROJECT_DIR$/sass/main.scss" />
         <option value="$PROJECT_DIR$/sass/components/_section-news.scss" />
-        <option value="$PROJECT_DIR$/sass/components/_header.scss" />
         <option value="$PROJECT_DIR$/sass/components/_section-works.scss" />
         <option value="$PROJECT_DIR$/sass/components/_arrows.scss" />
         <option value="$PROJECT_DIR$/sass/components/_typography.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/sass/components/_section-category.scss" />
+        <option value="$PROJECT_DIR$/sass/components/_section-profi.scss" />
+        <option value="$PROJECT_DIR$/sass/components/_header.scss" />
       </list>
     </option>
   </component>
@@ -281,12 +284,12 @@
       <workItem from="1540895382288" duration="51695000" />
       <workItem from="1541154887217" duration="3964000" />
       <workItem from="1541163657055" duration="2986000" />
-      <workItem from="1541270626620" duration="22017000" />
+      <workItem from="1541270626620" duration="23424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188494000" />
+    <option name="totallyTimeSpent" value="189901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
@@ -605,14 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_section-profi.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="170" column="13" lean-forward="false" selection-start-line="170" selection-start-column="13" selection-end-line="170" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/components/_section-private.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -645,26 +640,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/components/_section-works.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_arrows.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -707,8 +686,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/components/_section-category.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state relative-caret-position="170">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/components/_arrows.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/components/_section-profi.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/components/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="177" column="44" lean-forward="false" selection-start-line="177" selection-start-column="44" selection-end-line="177" selection-end-column="44" />
           <folding />
         </state>
       </provider>

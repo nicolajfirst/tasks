@@ -154,7 +154,9 @@ html {
     .nav__bottom-right {
       display: flex;
       justify-content: space-between;
-      width: 76%; } }
+      width: 76%;
+      background: rgba(80, 59, 80, 0.6);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); } }
   @media screen and (max-width: 390px) {
     .nav__bottom-right {
       text-align: center;
@@ -1036,6 +1038,9 @@ input, button {
         @media screen and (max-width: 780px) {
           .section-profi .wrapper__item:last-child span {
             font-size: 2.2rem; } }
+        @media screen and (max-width: 780px) {
+          .section-profi .wrapper__item:last-child span {
+            font-size: 1.8rem; } }
       @media screen and (max-width: 780px) {
         .section-profi .wrapper__item:last-child {
           background-color: #FF8118;
@@ -1051,9 +1056,6 @@ input, button {
     .section-profi .profi__img--orange {
       margin-top: 4rem;
       margin-bottom: 0; }
-
-#gear {
-  fill: blue; }
 
 .footer {
   padding-top: 3rem; }
