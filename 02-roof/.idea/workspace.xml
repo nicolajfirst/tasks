@@ -7,8 +7,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../01-roof/sass/components/_button.scss" afterPath="$PROJECT_DIR$/../01-roof/sass/components/_button.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/components/_header.scss" afterPath="$PROJECT_DIR$/sass/components/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/components/_section-category.scss" afterPath="$PROJECT_DIR$/sass/components/_section-category.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/components/_section-profi.scss" afterPath="$PROJECT_DIR$/sass/components/_section-profi.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/main.css" afterPath="$PROJECT_DIR$/sass/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/main.css.map" afterPath="$PROJECT_DIR$/sass/main.css.map" />
     </list>
@@ -59,8 +57,8 @@
       <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/components/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="177" column="44" lean-forward="false" selection-start-line="177" selection-start-column="44" selection-end-line="177" selection-end-column="44" />
+            <state relative-caret-position="418">
+              <caret line="187" column="23" lean-forward="true" selection-start-line="187" selection-start-column="23" selection-end-line="187" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -284,12 +282,12 @@
       <workItem from="1540895382288" duration="51695000" />
       <workItem from="1541154887217" duration="3964000" />
       <workItem from="1541163657055" duration="2986000" />
-      <workItem from="1541270626620" duration="23424000" />
+      <workItem from="1541270626620" duration="24192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189901000" />
+    <option name="totallyTimeSpent" value="190669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
@@ -710,8 +708,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/components/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="177" column="44" lean-forward="false" selection-start-line="177" selection-start-column="44" selection-end-line="177" selection-end-column="44" />
+        <state relative-caret-position="418">
+          <caret line="187" column="23" lean-forward="true" selection-start-line="187" selection-start-column="23" selection-end-line="187" selection-end-column="23" />
           <folding />
         </state>
       </provider>
