@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="984db078-47e2-4ead-984c-f4b9df101df7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/box.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/calendar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/engineer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/handshake.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/wallet.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../01-roof/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../01-roof/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../01-roof/index.html" afterPath="$PROJECT_DIR$/../01-roof/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../01-roof/sass/components/_button.scss" afterPath="$PROJECT_DIR$/../01-roof/sass/components/_button.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/components/_form.scss" afterPath="$PROJECT_DIR$/sass/components/_form.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/components/_header.scss" afterPath="$PROJECT_DIR$/sass/components/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/components/_section-news.scss" afterPath="$PROJECT_DIR$/sass/components/_section-news.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/components/_section-works.scss" afterPath="$PROJECT_DIR$/sass/components/_section-works.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/components/_typography.scss" afterPath="$PROJECT_DIR$/sass/components/_typography.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/components/_section-category.scss" afterPath="$PROJECT_DIR$/sass/components/_section-category.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/main.css" afterPath="$PROJECT_DIR$/sass/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/main.css.map" afterPath="$PROJECT_DIR$/sass/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/main.scss" afterPath="$PROJECT_DIR$/sass/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/settings/_variable.scss" afterPath="$PROJECT_DIR$/sass/settings/_variable.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
@@ -77,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_section-category.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_section-category.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/components/_section-category.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="28" />
+            <state relative-caret-position="340">
+              <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -180,7 +166,6 @@
         <option value="$PROJECT_DIR$/img/calendar.svg" />
         <option value="$PROJECT_DIR$/sass/components/_section-private.scss" />
         <option value="$PROJECT_DIR$/sass/components/_section-profi.scss" />
-        <option value="$PROJECT_DIR$/sass/components/_section-category.scss" />
         <option value="$PROJECT_DIR$/sass/components/_form.scss" />
         <option value="$PROJECT_DIR$/sass/main.scss" />
         <option value="$PROJECT_DIR$/sass/components/_section-news.scss" />
@@ -190,6 +175,7 @@
         <option value="$PROJECT_DIR$/sass/components/_typography.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/sass/components/_section-category.scss" />
       </list>
     </option>
   </component>
@@ -295,12 +281,12 @@
       <workItem from="1540895382288" duration="51695000" />
       <workItem from="1541154887217" duration="3964000" />
       <workItem from="1541163657055" duration="2986000" />
-      <workItem from="1541270626620" duration="21274000" />
+      <workItem from="1541270626620" duration="22017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187751000" />
+    <option name="totallyTimeSpent" value="188494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
@@ -651,14 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_section-category.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/components/_section-news.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -724,6 +702,14 @@
             <element signature="n#svg#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#svg#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/components/_section-category.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

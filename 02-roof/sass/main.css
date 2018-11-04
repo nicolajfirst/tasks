@@ -584,7 +584,7 @@ input, button {
         left: 23rem; } }
     @media screen and (max-width: 480px) {
       .section-category .heading-primary::after {
-        top: 4.5rem;
+        top: 3.9rem;
         left: 10rem; } }
 
 .category__holder {
