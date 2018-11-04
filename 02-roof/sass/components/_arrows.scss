@@ -1,0 +1,27 @@
+.arrow-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 3rem;
+}
+
+.svg-block {
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.svg__left, .svg__right {
+  cursor: pointer;
+
+  @media screen and (max-width: 480px) {
+    width: 70%;
+  }
+}
+
+.svg__left image, .svg__right image {
+
+  @media screen and (max-width: 480px) {
+    width: 62%;
+  }
+}

@@ -1,5 +1,6 @@
 .section-works {
   padding-top: 10rem;
+  background-color: #F3F3F3;
 
   @media screen and (max-width: 780px) {
     padding-top: 5rem;
@@ -8,14 +9,30 @@
   @media screen and (max-width: 480px) {
     padding: 5rem 1rem 0 1rem;
   }
+
+  .heading-primary::after {
+    display: none;
+  }
 }
 
 .work {
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__picture-wrap {
     margin-bottom: 3rem;
     width: 100%;
     height: 52.5rem;
+
+    @media screen and (max-width: 780px) {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
 
     &::after {
       content: "";
@@ -29,7 +46,7 @@
     height: 100%;
     float: left;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 780px) {
       width: 100%;
       float: none;
     }
@@ -46,52 +63,15 @@
     height: 52.5rem;
     float: left;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 780px) {
+      display: flex;
       width: 100%;
-      display: block;
+      height: 20rem;
     }
   }
 
   &__img-small {
-    //background and other styles look at main.scss
-
-
-    &:hover {
-
-    }
-
-    //&::after {
-    //  content: "";
-    //  display: block;
-    //  position: absolute;
-    //  top: 0;
-    //  left: 0;
-    //  width: 100%;
-    //  height: 100%;
-    //  background-color: rgba($orange, .3);
-    //  z-index: 10;
-    //}
-  }
-
-  &__text {
-    display: flex;
+    //background and other styles look at main.scs
   }
 }
 
-.arrow-h {
-  padding: .2rem;
-  width: 2.7rem;
-  height: 7rem;
-  transform: rotate(90deg);
-  position: absolute;
-  top: 11rem;
-  right: 2rem;
-  font-size: 3rem;
-  z-index: 5;
-
-  @media screen and (max-width: 480px) {
-    position: absolute;
-    right: 2rem;
-    bottom: 42rem;
-  }
-}

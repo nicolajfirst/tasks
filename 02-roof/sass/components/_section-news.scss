@@ -1,26 +1,31 @@
 .section-news {
   padding-top: 10rem;
+  background-color: #F3F3F3;
 
   @media screen and (max-width: 780px) {
     padding-top: 5rem;
   }
 
   @media screen and (max-width: 480px) {
-    padding: 68rem 1rem 0 1rem;
+    padding: 5rem 1rem 0 1rem;
+
   }
 
+  .heading-primary::after {
+    display: none;
+  }
 }
 
 .news {
 
   &__text {
-
+    display: flex;
+    justify-content: flex-end;
   }
 
   &__wrap{
     display: flex;
     justify-content: space-between;
-    margin-top: 10rem;
 
     @media screen and (max-width: 480px) {
       display: block;
@@ -29,6 +34,10 @@
 
   &__block {
     width: 25.37%;
+
+    @media screen and (max-width: 780px) {
+      width: 31%;
+    }
 
     @media screen and (max-width: 480px) {
       width: 100%;
@@ -45,7 +54,6 @@
 }
 
 .arrow-h--news {
-
   top: 11rem;
 
   @media screen and (max-width: 480px) {

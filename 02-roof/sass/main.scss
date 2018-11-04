@@ -4,14 +4,17 @@
 @import "components/button";
 @import "components/form";
 @import "components/typography";
+@import "components/section-category";
 @import "components/section-works";
+@import "components/arrows";
 @import "components/section-news";
+@import "components/section-private";
+@import "components/section-profi";
 @import "components/footer";
 
 @font-face {
   font-family: "RoadRadio";
   src: url("../fonts/font-radio/RoadRadio.ttf");
-  src: url("../fonts/font-radio/RoadRadio-Light.ttf");
 }
 
 @font-face {
@@ -29,6 +32,11 @@
   src: url("../fonts/font-radio/RoadRadio-Bold.ttf");
 }
 
+@font-face {
+  font-family: "RoadRadio Black";
+  src: url("../fonts/font-radio/RoadRadio-Black.ttf");
+}
+
 .header {
   height: 80rem;
   background-image: url('../img/dom-bg.png');
@@ -41,6 +49,10 @@
   @media screen and (max-width: 780px) {
     background-size: cover;
     background-position: center center;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 37rem;
   }
 }
 
@@ -59,6 +71,10 @@
     background-size: cover;
     background-position: center center;
   }
+
+  @media screen and (max-width: 480px) {
+    height: 37rem;
+  }
 }
 
 .work__img-small {
@@ -76,6 +92,11 @@
     -webkit-transition: background-size 2s ease-out;
     transition: background-size 2s ease-out;
 
+    @media screen and (max-width: 980px) {
+      background-size: cover;
+      height: 100%;
+    }
+
     &:hover {
       background-size: 110%;
     }
@@ -90,6 +111,11 @@
     background-size: 105%;
     -webkit-transition: background-size 2s ease-out;
     transition: background-size 2s ease-out;
+
+    @media screen and (max-width: 980px) {
+      background-size: cover;
+      height: 100%;
+    }
 
     &:hover {
       background-size: 110%;
@@ -106,6 +132,12 @@
     -webkit-transition: background-size 2s ease-out;
     transition: background-size 2s ease-out;
 
+    @media screen and (max-width: 980px) {
+      background-size: cover;
+      height: 100%;
+    }
+
+
     &:hover {
       background-size: 110%;
     }
@@ -113,7 +145,7 @@
 
   @media screen and (max-width: 480px) {
     background-size: cover;
-    margin-top: 1rem;
+    //margin-top: 1rem;
   }
 }
 

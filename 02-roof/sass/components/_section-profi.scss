@@ -1,0 +1,172 @@
+.section-profi {
+  padding-top: 10rem;
+  background-color: #F3F3F3;
+
+  @media screen and (max-width: 780px) {
+    padding-top: 7rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-top: 5rem;
+  }
+
+  .heading-primary {
+
+    @media screen and (max-width: 480px) {
+      font-size: 2.4rem;
+    }
+  }
+
+  .heading-primary::after {
+    top: 5.6rem;
+    left: 22rem;
+
+    @media screen and (max-width: 480px) {
+      top: 3.8rem;
+      left: 10rem;
+    }
+  }
+
+  .wrapper {
+
+    @media screen and (max-width: 780px) {
+      height: auto;
+    }
+
+    &__image {
+
+      @media screen and (max-width: 780px) {
+        width: 100%;
+      }
+    }
+  }
+
+.wrapper__item {
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  @media screen and (max-width: 780px) {
+    width: 33.33%;
+    height: 26rem;
+    padding: 2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 50%;
+    height: 25rem;
+  }
+
+  &:nth-child(3) {
+    background-color: $grey;
+    color: $orange;
+  }
+
+  &:nth-child(4) {
+    background-color: $orange;
+    color: $white;
+    padding-top: 5.5rem;
+    justify-content: flex-start;
+
+    & svg {
+      margin-bottom: 0;
+      margin-top: 20%;
+    }
+
+
+    @media screen and (max-width: 780px) {
+      padding-top: 2rem;
+    }
+  }
+
+  &:nth-child(5) {
+    background-color: $orange;
+    color: $white;
+
+    @media screen and (max-width: 780px) {
+      background: $grey;
+      color: $orange;
+    }
+
+    @media screen and (max-width: 480px) {
+      background: $orange;
+      color: $white;
+    }
+  }
+
+  &:nth-child(6) {
+    background-color: $grey;
+    color: $orange;
+    justify-content: center;
+
+    @media screen and (max-width: 780px) {
+      background: $orange;
+      color: $white;
+    }
+
+    @media screen and (max-width: 480px) {
+      background: $grey;
+      color: $orange;
+    }
+  }
+
+  &:nth-child(7) {
+    background-color: $orange;
+    color: $white;
+    padding-top: 5.5rem;
+    justify-content: flex-start;
+
+    & svg {
+      margin-bottom: 0;
+      margin-top: 20%;
+    }
+
+    @media screen and (max-width: 780px) {
+      background: $grey;
+      color: $orange;
+    }
+  }
+
+  &:last-child {
+    background-color: $grey;
+    color: $orange;
+
+    & span {
+      font-size: 2.6rem;
+
+      @media screen and (max-width: 780px) {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media screen and (max-width: 780px) {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+
+  & span {
+
+    @media screen and (max-width: 780px) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+  .profi__img {
+    height: auto;
+    margin-bottom: 2.6rem;
+
+    & > image {
+      width: 100%;
+    }
+
+    &--orange {
+      margin-top: 4rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+#gear {
+  fill: blue;
+}

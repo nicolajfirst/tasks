@@ -13,17 +13,23 @@
 
   @media screen and (max-width: 780px) {
     flex-direction: column;
-    background: rgba($orange, .5);
+    background: rgba(#503B50, 0.8);
     width: 100%;
     margin-left: -4rem;
+    margin-top: -1.8rem;
     justify-content: center;
-    z-index: 10;
+    z-index: 15;
   }
 }
 
 .nav__item {
   line-height: 2.5rem;
   z-index: 10;
+  transition: all .2s;
+
+  &:hover .nav__link {
+    border-bottom: 1px solid $orange;
+  }
 
   @media screen and (max-width: 780px) {
     display: inline-flex;
@@ -33,10 +39,6 @@
 
     &:not(:last-child) {
       border-bottom: 1px dashed #fff;
-    }
-
-    &:hover {
-      border-bottom: 1px dashed $orange;
     }
   }
 }
@@ -51,23 +53,30 @@
 .nav__link {
   font-size: 1.6rem;
   color: #fff;
-  line-height: 100%;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3rem;
+  line-height: 3rem;
   transition: all .2s;
+
+  @media screen and (max-width: 900px) {
+    font-size: 1.5rem;
+  }
+
 
   &:first-child {
     display: flex;
     align-items: center;
-    padding-top: 0.5rem;
+    //line-height: 100%;
 
     @media screen and (max-width: 780px) {
-      padding: 3rem 3.5rem;
+      padding: 2rem 3.5rem;
       font-size: 2.4rem;
     }
 
     @media screen and (max-width: 480px) {
       justify-content: center;
-      padding: 2.5rem;
-      font-size: 2rem;
+      padding: 1rem 2.5rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -111,7 +120,7 @@
 }
 
 .nav__top {
-  padding: 2rem 0;
+  padding-top: 2rem;
   display: flex;
   border-bottom: 1px dashed #fff;
 
@@ -127,11 +136,12 @@
   justify-content: space-between;
 
   @media screen and (max-width: 780px) {
-    padding-top: 0;
+    padding-top: 2rem;
   }
 
   @media screen and (max-width: 480px) {
     flex-direction: column;
+    margin-top: 2rem;
   }
 }
 
@@ -172,7 +182,6 @@
   }
 }
 
-
 .nav__number {
   display: block;
   vertical-align: middle;
@@ -207,6 +216,11 @@
   @media screen and (max-width: 780px) {
     width: 97%;
     margin: 0 .5rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    top: 10rem;
+    height: 20rem;
   }
 }
 
@@ -313,17 +327,37 @@
     border-bottom-right-radius: 0;
   }
 
+  @media screen and (max-width: 480px) {
+    top: -5.5rem;
+    right: 11rem;
+    border-radius: 3px;
+    width: 9rem;
+    height: 2.5rem;
+    background-color: rgba($white, .8);
+  }
+
   &__list {
     height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     text-align: center;
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   &__item {
     width: 1.5rem;
     height: 1.5rem;
+
+    @media screen and (max-width: 480px) {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
   }
 
   &__link {
@@ -333,8 +367,15 @@
 
     & > .fab::before {
       font-size: 1.4rem;
-
       color: $orange;
+
+      @media screen and (max-width: 480px) {
+        font-size: 1.6rem;
+      }
+
+      &:hover > .fab::before {
+        color: mediumpurple;
+      }
     }
   }
 }
