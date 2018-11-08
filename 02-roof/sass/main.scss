@@ -12,6 +12,10 @@
 @import "components/section-profi";
 @import "components/footer";
 
+@import "components/include/navigation";
+@import "components/slider-works";
+
+
 @font-face {
   font-family: "RoadRadio";
   src: url("../fonts/font-radio/RoadRadio.ttf");
@@ -94,6 +98,10 @@
 
     @media screen and (max-width: 980px) {
       background-size: cover;
+      height: 33.33%;
+    }
+
+    @media screen and (max-width: 780px) {
       height: 100%;
     }
 
@@ -114,6 +122,10 @@
 
     @media screen and (max-width: 980px) {
       background-size: cover;
+      height: 33.33%;
+    }
+
+    @media screen and (max-width: 780px) {
       height: 100%;
     }
 
@@ -134,6 +146,10 @@
 
     @media screen and (max-width: 980px) {
       background-size: cover;
+      height: 33.33%;
+    }
+
+    @media screen and (max-width: 780px) {
       height: 100%;
     }
 
@@ -148,6 +164,12 @@
     //margin-top: 1rem;
   }
 }
+
+body {
+  position: relative;
+}
+
+
 
 
 

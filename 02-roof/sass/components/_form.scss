@@ -101,3 +101,130 @@ input, button {
 :-moz-placeholder { /* Firefox 18- */
   color: rgba(255,255,255, .25);
 }
+
+// Popup form
+
+.form__btn {
+  width: 30%;
+  height: 4rem;
+  margin: 0 auto;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #503B50;
+  margin-top: 5%;
+  box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+  transition: all .2s;
+
+  & span {
+    line-height: 4rem;
+    color: $white;
+    font-family: "RoadRadio Light";
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background-color: rgba(#503B50, .8);
+    box-shadow: 0 1rem 1.5rem rgba(0,0,0, .15);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    background-color: rgba(#503B50, .9);
+    box-shadow: 0 1rem 1rem rgba(0,0,0, .2);
+    transform: translateY(1px);
+  }
+}
+
+body {
+  position: relative;
+}
+
+.form-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__text--popup {
+  width: 60%;
+  height: 4rem;
+  margin-bottom: 3%;
+  font-family: "RoadRadio Light";
+  font-size: 1.2rem;
+  background-color: rgba(#503B50, .3);
+  border-radius: .5rem;
+  color: $white;
+  padding-left: 1%;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, .8);
+  z-index: 5;
+  display: none;
+
+}
+
+.popup {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  border-radius: .5rem;
+  transform: translate(-50%, -50%);
+  padding: 4rem;
+  background: $orange;
+  color: $white;
+}
+
+.close-popup {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    background-color: $white;
+    position: absolute;
+    height: 1px;
+    width: 31px;
+    top: 11px;
+    left: -4px;
+  }
+  &::before {
+    transform: rotate(-45deg);
+  }
+  &::after {
+    transform: rotate(45deg);
+  }
+}
+
+.js-order {
+  cursor: pointer;
+}
+
+
+
+//.active-popup {
+//  display: block;
+//  z-index: 5;
+//}
+//
+//
+//.blur-popup {
+//  -webkit-filter: blur(5px);
+//  filter: blur(5px);
+//}
+
+

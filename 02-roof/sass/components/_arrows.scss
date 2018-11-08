@@ -11,7 +11,7 @@
   justify-content: space-between;
 }
 
-.svg__left, .svg__right {
+.svg__left, .svg__right, .js-arrow-left, .js-arrow-right {
   cursor: pointer;
 
   @media screen and (max-width: 480px) {
@@ -19,9 +19,10 @@
   }
 }
 
-.svg__left image, .svg__right image {
+.svg__left image, .svg__right image, .js-arrow-left image, .js-arrow-right image {
 
   @media screen and (max-width: 480px) {
     width: 62%;
+
   }
 }

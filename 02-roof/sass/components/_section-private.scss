@@ -28,7 +28,6 @@
   }
 
   .wrapper__item {
-
     @media screen and (max-width: 480px) {
 
       &:nth-child(7) {
@@ -216,6 +215,9 @@
     z-index: 2;
     transition: all .6s ease-in-out;
 
+    &.active {
+      transform: rotate(90deg);
+    }
   }
   img {
     width: 50%;

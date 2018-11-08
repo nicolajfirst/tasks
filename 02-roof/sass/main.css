@@ -39,10 +39,14 @@ html {
       justify-content: center;
       z-index: 15; } }
 
+.nav__item--1 {
+  margin-bottom: -1px; }
+
 .nav__item {
   line-height: 2.5rem;
   z-index: 10;
-  transition: all .2s; }
+  transition: all .2s;
+  margin-bottom: -2px; }
   .nav__item:hover .nav__link {
     border-bottom: 1px solid #FF8118; }
   @media screen and (max-width: 780px) {
@@ -90,11 +94,18 @@ html {
 
 .nav__left {
   width: 8.33%;
-  float: left; }
+  float: left;
+  position: relative;
+  z-index: 2; }
   @media screen and (max-width: 780px) {
     .nav__left {
       width: 15%;
       margin-right: 4%; } }
+
+.link__logo {
+  display: inline-block;
+  width: auto;
+  height: 100%; }
 
 .nav__img {
   width: 100%; }
@@ -191,6 +202,19 @@ html {
   width: 100%;
   height: 58rem;
   border: 9px solid #FF8118; }
+  .frame:after {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 25.1rem;
+    position: absolute;
+    top: 32rem;
+    left: -.75rem;
+    background-color: #E48125;
+    z-index: 5; }
+    @media screen and (max-width: 480px) {
+      .frame:after {
+        display: none; } }
   @media screen and (max-width: 780px) {
     .frame {
       width: 97%;
@@ -491,6 +515,96 @@ input, button {
   /* Firefox 18- */
   color: rgba(255, 255, 255, 0.25); }
 
+.form__btn {
+  width: 30%;
+  height: 4rem;
+  margin: 0 auto;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #503B50;
+  margin-top: 5%;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transition: all .2s; }
+  .form__btn span {
+    line-height: 4rem;
+    color: #fff;
+    font-family: "RoadRadio Light";
+    font-size: 1.2rem;
+    text-transform: uppercase; }
+  .form__btn:hover {
+    background-color: rgba(80, 59, 80, 0.8);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px); }
+  .form__btn:active {
+    background-color: rgba(80, 59, 80, 0.9);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    transform: translateY(1px); }
+
+body {
+  position: relative; }
+
+.form-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.form__text--popup {
+  width: 60%;
+  height: 4rem;
+  margin-bottom: 3%;
+  font-family: "RoadRadio Light";
+  font-size: 1.2rem;
+  background-color: rgba(80, 59, 80, 0.3);
+  border-radius: .5rem;
+  color: #fff;
+  padding-left: 1%; }
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  display: none; }
+
+.popup {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  border-radius: .5rem;
+  transform: translate(-50%, -50%);
+  padding: 4rem;
+  background: #FF8118;
+  color: #fff; }
+
+.close-popup {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  cursor: pointer; }
+  .close-popup::before, .close-popup::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    height: 1px;
+    width: 31px;
+    top: 11px;
+    left: -4px; }
+  .close-popup::before {
+    transform: rotate(-45deg); }
+  .close-popup::after {
+    transform: rotate(45deg); }
+
+.js-order {
+  cursor: pointer; }
+
 .bold {
   font-family: "RoadRadio Bold"; }
 
@@ -668,9 +782,7 @@ input, button {
   display: flex;
   justify-content: space-between; }
 .work__picture-wrap {
-  margin-bottom: 3rem;
-  width: 100%;
-  height: 52.5rem; }
+  width: 100%; }
   @media screen and (max-width: 780px) {
     .work__picture-wrap {
       height: auto;
@@ -714,14 +826,14 @@ input, button {
   display: flex;
   justify-content: space-between; }
 
-.svg__left, .svg__right {
+.svg__left, .svg__right, .js-arrow-left, .js-arrow-right {
   cursor: pointer; }
   @media screen and (max-width: 480px) {
-    .svg__left, .svg__right {
+    .svg__left, .svg__right, .js-arrow-left, .js-arrow-right {
       width: 70%; } }
 
 @media screen and (max-width: 480px) {
-  .svg__left image, .svg__right image {
+  .svg__left image, .svg__right image, .js-arrow-left image, .js-arrow-right image {
     width: 62%; } }
 
 .section-news {
@@ -739,12 +851,9 @@ input, button {
 .news__text {
   display: flex;
   justify-content: flex-end; }
-.news__wrap {
-  display: flex;
-  justify-content: space-between; }
-  @media screen and (max-width: 480px) {
-    .news__wrap {
-      display: block; } }
+@media screen and (max-width: 480px) {
+  .news__wrap {
+    display: block; } }
 .news__block {
   width: 25.37%; }
   @media screen and (max-width: 780px) {
@@ -766,6 +875,21 @@ input, button {
       position: absolute;
       right: 2rem;
       top: 4rem; } }
+
+.news__wrap.slick-track {
+  display: flex;
+  justify-content: space-between; }
+
+.news__block.slick-slide {
+  width: 305px;
+  margin: 0 3.5rem; }
+
+@media screen and (max-width: 480px) {
+  .news__block.slick-slide {
+    margin-right: 3rem; } }
+@media screen and (max-width: 480px) {
+  .news__block.slick-slide {
+    margin-right: 0; } }
 
 .section-private {
   padding-top: 10rem;
@@ -914,6 +1038,8 @@ input, button {
     transform: translate(-50%, -50%);
     z-index: 2;
     transition: all .6s ease-in-out; }
+    .wrapper > svg.active {
+      transform: rotate(90deg); }
   .wrapper img {
     width: 50%;
     height: 50%;
@@ -1098,7 +1224,7 @@ input, button {
       .footer__left {
         width: 100%;
         float: none;
-        border-right: 2px dashed #fff;
+        border-right: none;
         padding: 0 1rem;
         margin-bottom: 2rem; } }
   .footer__logo {
@@ -1150,7 +1276,7 @@ input, button {
       .footer__right {
         width: 100%;
         float: none;
-        border-right: 2px dashed #fff;
+        border-right: none;
         padding: 0 1rem; } }
   .footer__list {
     width: 100%;
@@ -1211,6 +1337,89 @@ input, button {
         align-items: flex-start; } }
   .footer__img {
     width: 100%; }
+
+.holder {
+  width: 100%;
+  height: 52.5rem;
+  margin: 0 auto;
+  max-width: 1250px;
+  background-color: greenyellow; }
+  @media screen and (max-width: 780px) {
+    .holder {
+      height: 100%; } }
+
+.slider-big-wrapper {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: row; }
+  @media screen and (max-width: 780px) {
+    .slider-big-wrapper {
+      flex-direction: column;
+      width: 100%; } }
+
+.slider-big {
+  width: 85%; }
+  @media screen and (max-width: 780px) {
+    .slider-big {
+      width: 100%;
+      height: 30rem; } }
+  @media screen and (max-width: 480px) {
+    .slider-big {
+      height: 25rem; } }
+
+.slider-big .slide {
+  display: flex;
+  align-items: center;
+  height: 100%; }
+
+.slider-big img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+
+.slider-nav {
+  width: 15%;
+  position: relative;
+  background-color: rgba(255, 129, 24, 0.8); }
+  @media screen and (max-width: 780px) {
+    .slider-nav {
+      width: 100%;
+      height: auto; } }
+
+.sliderNav-img {
+  height: 100%;
+  overflow-y: hidden; }
+
+.qwe {
+  width: 100%;
+  height: 100%; }
+
+.qwe img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: .4;
+  transition: all 0.3s ease-out; }
+
+.qwe.slick-slide {
+  width: 100%;
+  margin-right: 0; }
+
+.slide.slick-slide {
+  width: 29%;
+  margin-right: 0;
+  height: 52.5rem; }
+
+.slick-list.draggable {
+  height: 52.5rem; }
+  @media screen and (max-width: 780px) {
+    .slick-list.draggable {
+      height: 100%; } }
+
+@media screen and (max-width: 780px) {
+  .slide.slick-slide.slick-current.slick-active {
+    width: 100vw; } }
 
 @font-face {
   font-family: "RoadRadio";
@@ -1275,6 +1484,9 @@ input, button {
     @media screen and (max-width: 980px) {
       .work__img-small--1 {
         background-size: cover;
+        height: 33.33%; } }
+    @media screen and (max-width: 780px) {
+      .work__img-small--1 {
         height: 100%; } }
     .work__img-small--1:hover {
       background-size: 110%; }
@@ -1286,6 +1498,9 @@ input, button {
     @media screen and (max-width: 980px) {
       .work__img-small--2 {
         background-size: cover;
+        height: 33.33%; } }
+    @media screen and (max-width: 780px) {
+      .work__img-small--2 {
         height: 100%; } }
     .work__img-small--2:hover {
       background-size: 110%; }
@@ -1297,11 +1512,17 @@ input, button {
     @media screen and (max-width: 980px) {
       .work__img-small--3 {
         background-size: cover;
+        height: 33.33%; } }
+    @media screen and (max-width: 780px) {
+      .work__img-small--3 {
         height: 100%; } }
     .work__img-small--3:hover {
       background-size: 110%; }
   @media screen and (max-width: 480px) {
     .work__img-small {
       background-size: cover; } }
+
+body {
+  position: relative; }
 
 /*# sourceMappingURL=main.css.map */
