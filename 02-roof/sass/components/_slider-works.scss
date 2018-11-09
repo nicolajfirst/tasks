@@ -3,7 +3,7 @@
   height: 52.5rem;
   margin: 0 auto;
   max-width: 1250px;
-  background-color: greenyellow;
+  //background-color: greenyellow;
 
   @media screen and (max-width: 780px) {
     height: 100%;
@@ -19,6 +19,7 @@
   @media screen and (max-width: 780px) {
     flex-direction: column;
     width: 100%;
+
   }
 }
 
