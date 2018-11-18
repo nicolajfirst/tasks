@@ -1,0 +1,118 @@
+.header {
+  height: 100vh;
+
+  @media screen and (max-width: 480px) {
+    height: 60vh;
+  }
+
+  &__block {
+    display: flex;
+    padding: .6rem 6rem 3rem 6rem;
+    background-color: $white;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+
+    @media screen and (max-width: 1024px) {
+
+    }
+
+    @media screen and (max-width: 480px) {
+    }
+  }
+
+  &__logo {
+    width: 10%;
+    margin-right: 2%;
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__right {
+    width: 88%;
+  }
+
+  &__list {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    justify-content: space-between;
+  }
+
+  &__link {
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $blood-color;
+    font-size: 1.6rem;
+    padding-bottom: 2.1rem;
+    border-bottom: 1px solid transparent;
+    transition: all .3s;
+
+    &:hover {
+      border-bottom: 1px solid $blood-color;
+    }
+  }
+}
+
+.nav {
+
+  &__top {
+    display: flex;
+    padding: 2rem .5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $grey;
+  }
+
+  &__bottom {
+    margin-top: 3rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__number {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.number__link {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: $black;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 14%;
+
+  &__link {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__icon {
+    font-size: 2.4rem;
+    color: $black;
+
+    &:hover {
+      color: $blood-color;
+    }
+  }
+}
+
+
