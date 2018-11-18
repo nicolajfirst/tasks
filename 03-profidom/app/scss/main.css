@@ -212,40 +212,37 @@ html {
 
 .paragraph {
   font-family: "Brandon Grotesque Light";
-  font-size: 3.2rem;
-  color: #fff;
-  margin-bottom: 4.5rem; }
+  font-size: 2rem;
+  color: #2F424C;
+  margin-bottom: 2rem;
+  text-align: justify; }
   @media screen and (max-width: 780px) {
     .paragraph {
-      font-size: 2.6rem;
-      margin-bottom: 3.5rem; } }
+      font-size: 1.8rem;
+      margin-bottom: 1rem; } }
   @media screen and (max-width: 480px) {
     .paragraph {
-      font-size: 1.6rem;
-      margin-bottom: 2rem; } }
-  .paragraph--copy {
-    text-align: center;
-    font-size: 1.6rem;
-    margin-bottom: 0;
-    padding-bottom: 3rem; }
+      font-size: 2.2rem;
+      margin-bottom: 1rem; } }
+  .paragraph--2 {
+    height: 11rem;
+    margin-top: 2rem;
+    overflow-y: hidden;
+    margin-bottom: 0; }
     @media screen and (max-width: 480px) {
-      .paragraph--copy {
-        font-size: 1.4rem;
-        margin-bottom: 0; } }
-
-.paragraph--small {
-  font-size: 2.2rem;
-  color: #767676;
-  margin-bottom: 0; }
-  @media screen and (max-width: 480px) {
-    .paragraph--small {
-      font-size: 1.8rem; } }
-  .paragraph--small--blue {
+      .paragraph--2 {
+        font-size: 1.8rem; } }
+  .paragraph--small {
+    font-size: 2rem;
+    font-family: "Open Sans Semibold", sans-serif;
+    text-transform: lowercase;
+    color: #950127; }
+  .paragraph--blue {
     font-size: 1.8rem;
     margin-top: 1rem;
     color: #fff; }
     @media screen and (max-width: 780px) {
-      .paragraph--small--blue {
+      .paragraph--blue {
         font-size: 1.6rem;
         margin-top: .8rem; } }
 
@@ -264,10 +261,13 @@ html {
       text-align: justify; } }
 
 .heading-tertiary {
-  font-size: 1.8rem;
-  color: #f2f2f2;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #950127;
   font-weight: bold;
-  margin-bottom: 2.5rem; }
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #950127;
+  margin-bottom: 5rem; }
   @media screen and (max-width: 1000px) {
     .heading-tertiary {
       font-size: 1.6rem; } }
@@ -277,7 +277,7 @@ html {
 
 .heading-quaternary {
   font-family: "Brandon Grotesque Bold";
-  font-size: 1.8rem;
+  font-size: 4rem;
   color: #fff;
   margin-bottom: 1rem; }
 
@@ -429,25 +429,16 @@ html {
     .heading__box {
       margin-bottom: 4rem; } }
 
-.stat {
+.stat, .partner,
+.works {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   background-color: #F3F3F3;
-  box-shadow: 0 1rem 3rem rgba(16, 16, 16, 0.2); }
-  @media screen and (max-width: 780px) {
-    .stat {
-      margin-bottom: 3rem; } }
-  @media screen and (max-width: 640px) {
-    .stat {
-      padding: 0 1rem; } }
-  @media screen and (max-width: 480px) {
-    .stat {
-      display: block;
-      margin-bottom: 3rem; } }
+  box-shadow: 0 1rem 3rem rgba(16, 16, 16, 0.2);
+  padding: 0 5rem; }
   .stat__column {
     width: 100%;
     margin-top: -8rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -459,7 +450,21 @@ html {
   .stat__block {
     width: 25%;
     background-color: #F3F3F3;
-    padding: 0 4rem; }
+    padding: 0 3rem; }
+
+.image__wrap {
+  display: flex;
+  justify-content: space-between; }
+
+.image__block {
+  width: 22%;
+  height: auto;
+  border: 1px solid #950127;
+  border-radius: 5px; }
+
+.image__icon {
+  width: 100%;
+  height: 100%; }
 
 .section-form {
   background-color: #7690C4;
@@ -752,6 +757,56 @@ body {
 
 .js-order {
   cursor: pointer; }
+
+.section-partner,
+.section-works {
+  background-color: #F3F3F3;
+  padding-top: 9rem; }
+
+.partner__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .partner__list:after {
+    content: "";
+    display: block;
+    clear: both; }
+.partner__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  height: 15rem; }
+.partner__img {
+  width: auto;
+  height: 40%; }
+  .partner__img--long {
+    height: 30%; }
+  .partner__img--height {
+    height: 65%; }
+
+.works-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+.works__icon {
+  width: 22%; }
+.works__icon:nth-child(4):after {
+  content: "";
+  display: block;
+  margin-bottom: 5rem; }
+.works__img {
+  width: 100%;
+  border: 1px solid #950127;
+  border-radius: 5px;
+  height: auto; }
+.works__date {
+  font-size: 1.6rem;
+  font-family: "Open Sans Semibold", sans-serif;
+  color: #2F424C; }
 
 @font-face {
   font-family: "Brandon Grotesque";

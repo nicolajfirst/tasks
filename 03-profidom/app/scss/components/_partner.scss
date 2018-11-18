@@ -1,0 +1,48 @@
+.section-partner,
+.section-works {
+  background-color: $grey-bg;
+  padding-top: 9rem;
+}
+
+.partner,
+.works {
+  @extend .stat;
+}
+
+.partner {
+
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    height: 15rem;
+    //border: 1px solid orangered;
+  }
+
+  &__img {
+    width: auto;
+    height: 40%;
+
+    &--long {
+      height: 30%;
+    }
+
+    &--height {
+      height: 65%;
+    }
+  }
+}

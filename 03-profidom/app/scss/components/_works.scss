@@ -1,0 +1,38 @@
+
+.works {
+
+  &-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__icon {
+    width: 22%;
+  }
+
+  &__icon:nth-child(4):after{
+    content: "";
+    display: block;
+    margin-bottom: 5rem;
+  }
+
+  &__img {
+    width: 100%;
+    border: 1px solid $blood-color;
+    border-radius: 5px;
+    height: auto;
+  }
+
+  &__figcaption {
+
+  }
+
+  &__date {
+    font-size: 1.6rem;
+    font-family: "Open Sans Semibold", sans-serif;
+    color: $blue-dark;
+  }
+}

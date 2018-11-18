@@ -45,40 +45,37 @@
 
 .paragraph {
   font-family: "Brandon Grotesque Light";
-  font-size: 3.2rem;
-  color: $white;
-  margin-bottom: 4.5rem;
+  font-size: 2rem;
+  color: $blue-dark;
+  margin-bottom: 2rem;
+  text-align: justify;
 
   @media screen and (max-width: 780px) {
-    font-size: 2.6rem;
-    margin-bottom: 3.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
   }
 
-  &--copy {
-    text-align: center;
-    font-size: 1.6rem;
+  &--2 {
+    height: 11rem;
+    margin-top: 2rem;
+    overflow-y: hidden;
     margin-bottom: 0;
-    padding-bottom: 3rem;
 
     @media screen and (max-width: 480px) {
-      font-size: 1.4rem;
-      margin-bottom: 0;
+      font-size: 1.8rem;
     }
   }
-}
 
-.paragraph--small {
-  font-size: 2.2rem;
-  color: #767676;
-  margin-bottom: 0;
-
-  @media screen and (max-width: 480px) {
-    font-size: 1.8rem;
+  &--small {
+    font-size: 2rem;
+    font-family: "Open Sans Semibold", sans-serif;
+    text-transform: lowercase;
+    color: $blood-color;
   }
 
   &--blue {
@@ -111,10 +108,13 @@
 }
 
 .heading-tertiary {
-  font-size: 1.8rem;
-  color: #f2f2f2;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: $blood-color;
   font-weight: bold;
-  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid $blood-color;
+  margin-bottom: 5rem;
 
   @media screen and (max-width: 1000px) {
     font-size: 1.6rem;
@@ -127,7 +127,7 @@
 
 .heading-quaternary {
   font-family: "Brandon Grotesque Bold";
-  font-size: 1.8rem;
+  font-size: 4rem;
   color: $white;
   margin-bottom: 1rem;
 }
