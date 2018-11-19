@@ -19,11 +19,17 @@
     margin-bottom: 5rem;
   }
 
+  //&__wrap-img {
+  //  width: 100%;
+  //  height: auto;
+  //}
+
   &__img {
+    display: block;
+    height: auto;
     width: 100%;
     border: 1px solid $blood-color;
     border-radius: 5px;
-    height: auto;
   }
 
   &__figcaption {
