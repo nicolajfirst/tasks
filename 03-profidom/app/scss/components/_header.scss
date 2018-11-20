@@ -1,3 +1,4 @@
+
 .header {
   height: 100vh;
 
@@ -35,7 +36,7 @@
   }
 
   &__list {
-    width: 60%;
+    width: 48%;
     display: flex;
     justify-content: space-between;
   }
@@ -47,10 +48,10 @@
   &__link {
     height: 100%;
     text-transform: uppercase;
-    font-weight: bold;
+    font-family: "Azoft Sans Bold", sans-serif;
     color: $blood-color;
     font-size: 1.6rem;
-    padding-bottom: 2.1rem;
+    padding-bottom: 2.3rem;
     border-bottom: 1px solid transparent;
     transition: all .3s;
 
@@ -90,9 +91,13 @@
 }
 
 .number__link {
-  font-weight: bold;
+  font-family: "Azoft Sans Bold", sans-serif;
   font-size: 1.6rem;
   color: $black;
+
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .socials {

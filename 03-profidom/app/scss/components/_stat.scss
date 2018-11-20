@@ -1,5 +1,5 @@
 .section-stat {
-  background-color: $grey-bg;
+  //background-color: $grey-bg;
 
   @media screen and (max-width: 780px) {
     padding: 6rem 0;
@@ -24,6 +24,8 @@
   background-color: $grey-bg;
   box-shadow: 0 1rem 3rem rgba($black, .2);
   padding: 0 5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 
   @media screen and (max-width: 780px) {
 

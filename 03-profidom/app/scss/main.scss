@@ -12,37 +12,44 @@
 @import "components/partner";
 @import "components/works";
 @import "components/delivery";
-
+@import "components/calc";
 
 @font-face {
-  font-family: "Brandon Grotesque";
-  src: url("../fonts/BrandonGrotesque/BrandonGrotesque-Regular.ttf");
+  font-family: "Azoft Sans";
+  src: url("../fonts/azoftSans/azoftsans.ttf");
 }
 
 @font-face {
-  font-family: "Brandon Grotesque Light";
-  src: url("../fonts/BrandonGrotesque/BrandonGrotesque-Light.ttf");
+  font-family: "Azoft Sans Bold";
+  src: url("../fonts/azoftSans/azoftsansbold.ttf");
 }
 
-@font-face {
-  font-family: "Brandon Grotesque Thin";
-  src: url("../fonts/BrandonGrotesque/BrandonGrotesque-Thin.ttf");
-}
-
-@font-face {
-  font-family: "Brandon Grotesque Bold";
-  src: url("../fonts/BrandonGrotesque/BrandonGrotesque-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Brandon Grotesque Black";
-  src: url("../fonts/BrandonGrotesque/BrandonGrotesque-Black.ttf");
-}
 
 .header {
   background-image: url("../img/bg-header.jpg");
   background-size: cover;
 }
+
+.section-calc {
+  background-image: linear-gradient(to right bottom, rgba($grey-bg, .8), rgba($grey-bg, .8)), url("../img/map-bg.jpg");
+  background-size: cover;
+}
+
+.footer {
+  background-color: $grey-bg;
+
+  &__block {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+  }
+}
+
+
+
+
+
 
 
 
