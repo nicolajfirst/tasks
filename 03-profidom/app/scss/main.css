@@ -454,10 +454,10 @@ html {
       margin-bottom: 4rem; } }
 
 .stat, .partner,
-.works {
+.works,
+.delivery {
   width: 100%;
   background-color: #F3F3F3;
-  box-shadow: 0 1rem 3rem rgba(16, 16, 16, 0.2);
   padding: 0 5rem;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem; }
@@ -726,7 +726,6 @@ body {
 .delivery {
   width: 100%;
   background-color: #F3F3F3;
-  box-shadow: 0 1rem 3rem rgba(16, 16, 16, 0.2);
   padding: 0 5rem; }
   .delivery-box {
     height: 48.5rem;
@@ -778,6 +777,9 @@ body {
 @font-face {
   font-family: "Azoft Sans Bold";
   src: url("../fonts/azoftSans/azoftsansbold.ttf"); }
+body {
+  background-color: #F3F3F3; }
+
 .header {
   background-image: url("../img/bg-header.jpg");
   background-size: cover; }
