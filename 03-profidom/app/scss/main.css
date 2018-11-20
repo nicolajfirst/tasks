@@ -297,42 +297,39 @@ html {
   font: 400 2.2rem "Open Sans", sans-serif;
   color: #950127; }
 
-.header {
-  height: 100vh; }
-  @media screen and (max-width: 480px) {
-    .header {
-      height: 60vh; } }
-  .header__block {
-    display: flex;
-    padding: .6rem 6rem 3rem 6rem;
-    background-color: #fff;
-    border-bottom-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem; }
-  .header__logo {
-    width: 10%;
-    margin-right: 2%; }
-    .header__logo img {
-      width: 100%;
-      height: auto; }
-  .header__right {
-    width: 88%; }
-  .header__list {
-    width: 48%;
-    display: flex;
-    justify-content: space-between; }
-  .header__item {
-    justify-content: space-between; }
-  .header__link {
-    height: 100%;
-    text-transform: uppercase;
-    font-family: "Azoft Sans Bold", sans-serif;
-    color: #950127;
-    font-size: 1.6rem;
-    padding-bottom: 2.3rem;
-    border-bottom: 1px solid transparent;
-    transition: all .3s; }
-    .header__link:hover {
-      border-bottom: 1px solid #950127; }
+@media screen and (max-width: 480px) {
+  .header {
+    height: 60vh; } }
+.header__block {
+  display: flex;
+  padding: .6rem 6rem 3rem 6rem;
+  background-color: #fff;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem; }
+.header__logo {
+  margin-right: 3%; }
+  .header__logo img {
+    width: 100%;
+    height: auto; }
+.header__right {
+  width: 88%; }
+.header__list {
+  width: 48%;
+  display: flex;
+  justify-content: space-between; }
+.header__item {
+  justify-content: space-between; }
+.header__link {
+  height: 100%;
+  text-transform: uppercase;
+  font-family: "Azoft Sans Bold", sans-serif;
+  color: #950127;
+  font-size: 1.6rem;
+  padding-bottom: 2.3rem;
+  border-bottom: 1px solid transparent;
+  transition: all .3s; }
+  .header__link:hover {
+    border-bottom: 1px solid #950127; }
 
 .nav__top {
   display: flex;
@@ -571,6 +568,10 @@ input:-moz-placeholder {
   font: 400 1.6rem "Open Sans", sans-serif;
   text-transform: uppercase; }
 
+#map {
+  width: 100%;
+  height: 100%; }
+
 body {
   position: relative; }
 
@@ -780,9 +781,15 @@ body {
 body {
   background-color: #F3F3F3; }
 
+.main-content {
+  position: relative; }
+
 .header {
-  background-image: url("../img/bg-header.jpg");
-  background-size: cover; }
+  background: url("../img/bg-header.jpg") no-repeat, center, top;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 80rem; }
 
 .section-calc {
   background-image: linear-gradient(to right bottom, rgba(243, 243, 243, 0.8), rgba(243, 243, 243, 0.8)), url("../img/map-bg.jpg");
