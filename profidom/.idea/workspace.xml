@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_typography.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_typography.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scss/components/_typography.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="204">
+              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -94,7 +94,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_form.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scss/components/_form.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -131,10 +131,10 @@
         <option value="$PROJECT_DIR$/app/scss/components/_stat.scss" />
         <option value="$PROJECT_DIR$/app/scss/components/_header.scss" />
         <option value="$PROJECT_DIR$/app/scss/components/_partner.scss" />
-        <option value="$PROJECT_DIR$/app/scss/components/_typography.scss" />
         <option value="$PROJECT_DIR$/app/scss/components/_button.scss" />
         <option value="$PROJECT_DIR$/app/scss/components/_delivery.scss" />
         <option value="$PROJECT_DIR$/app/scss/components/_form.scss" />
+        <option value="$PROJECT_DIR$/app/scss/components/_typography.scss" />
       </list>
     </option>
   </component>
@@ -232,12 +232,12 @@
       <updated>1542808910917</updated>
       <workItem from="1542808916383" duration="1005000" />
       <workItem from="1542817568012" duration="628000" />
-      <workItem from="1542916064365" duration="21273000" />
+      <workItem from="1542916064365" duration="21856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22906000" />
+    <option name="totallyTimeSpent" value="23489000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
@@ -405,14 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/components/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/components/_button.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -433,6 +425,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/components/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding />
         </state>
       </provider>
