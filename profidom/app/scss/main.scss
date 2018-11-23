@@ -1,0 +1,75 @@
+@import "settings/base";
+@import "settings/variable";
+@import "settings/mixin";
+@import "settings/animate";
+
+@import "components/typography";
+@import "components/header";
+@import "components/button";
+@import "components/stat";
+@import "components/form";
+@import "components/popup";
+@import "components/partner";
+@import "components/works";
+@import "components/delivery";
+@import "components/calc";
+
+@font-face {
+  font-family: "Azoft Sans";
+  src: url("../fonts/azoftSans/azoftsans.ttf");
+}
+
+@font-face {
+  font-family: "Azoft Sans Bold";
+  src: url("../fonts/azoftSans/azoftsansbold.ttf");
+}
+
+body {
+  background-color: $grey-bg;
+}
+
+.main-content {
+  position: relative;
+}
+
+.header {
+  background: url("../img/bg-header.jpg")no-repeat, center, top;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 80rem;
+
+  @media screen and (max-width: 980px) {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 54rem;
+    padding: 0 .5rem;
+  }
+}
+.section-calc {
+  background: url("../img/footer-map.png") center center no-repeat;
+  background-size: contain;
+}
+
+.footer {
+  background-color: $grey-bg;
+
+  &__block {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+

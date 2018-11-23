@@ -1,0 +1,61 @@
+
+.works {
+
+  &-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__icon {
+    width: 22%;
+
+    @media screen and (max-width: 480px) {
+      width: 48%;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__icon:nth-child(4):after{
+    content: "";
+    display: block;
+    margin-bottom: 5rem;
+
+    @media screen and (max-width: 780px) {
+      margin-bottom: 3rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 1rem;
+    }
+  }
+
+
+  &__img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border: 1px solid $blood-color;
+    border-radius: 12px;
+  }
+
+  &__figcaption {
+    padding-top: 1.5rem;
+  }
+
+  &__date {
+    font-size: 1.6rem;
+    font-family: "Open Sans Semibold", sans-serif;
+    color: $blue-dark;
+
+    @media screen and (max-width: 780px) {
+      font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.2rem;
+    }
+  }
+}

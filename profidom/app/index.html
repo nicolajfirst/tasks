@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <title>Profidom || O компании</title>
+</head>
+<body>
+
+<div class="main-content js-main">
+    <header class="header">
+        <div class="container">
+            <nav class="header__block">
+                <div class="header__logo">
+                    <img src="img/logo-header.png" alt="Logo">
+                </div>
+                <div class="header__right">
+                    <div class="nav__top">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#" class="header__link">о компании</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">услуги</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">блог</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">контакты</a>
+                            </li>
+                        </ul>
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                <span class="socials__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="10px" height="20px">
+<image  x="0px" y="0px" width="10px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAMAAACDMFxkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAATlBMVEX///8wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ03///9ZA/a/AAAAGHRSTlMAI6fssBjpfqnxlJBjk0JgzsFwTZqBYYBr85CpAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+ILFQ01LB9+u5MAAABLSURBVAjXY2BgYGBkYpaQkGABsljZJCSgTHYJOJMDSHNycfMAmSxAJi8DGICY3CAGH78AkCkoJCQMFgMDEQRTFMEUg2oTR5hASyYAbuwJxVwRPP4AAAAASUVORK5CYII=" />
+</svg>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                <span class="socials__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="20px" height="20px">
+<image  x="0px" y="0px" width="20px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEX///+WACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACj///+GxWK9AAAADnRSTlMAN7z0+u5A7ffCkAwizUsTtE8AAAABYktHRACIBR1IAAAAB3RJTUUH4gsVDTcFb/pBfQAAAGNJREFUCNdjYFR+BwZGAgwi76DAkUEPxnzEYAdhPH33mAEq9qzuHZjZOQNEgpiv9pxeB2Wuuff2FIT5Yu+7d7f7wMyX5969ezMPnYmkAEkbsmFIVkABzDnvgM5BciSS0xEeAgCMRqbYjO3DmAAAAABJRU5ErkJggg==" />
+</svg>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                <span class="socials__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="21px">
+<image  x="0px" y="0px" width="27px" height="21px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAVCAMAAACAAGUXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAb1BMVEUwQ03///8wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ03///8USF7kAAAAI3RSTlMAAAJXobAEs3fc7u3QG70BdPkv1giTSepl9BSvRuaPLdLz+FugwNcAAAABYktHRAH/Ai3eAAAAB3RJTUUH4gsVDTgl0wx9egAAAGtJREFUKM990kkOgCAUA9CiKOI8zzP3v6NLjVq6InnJD58COK70vpGuI+Ar8x/lIzAsATQ1jfscRi98WJyk3JDlBTWgrLihbrhBtB23fmA2TnTmvLC71Cvdb9vp7sfJ3+wTaw+2/my9W/7LBS3+P1sUdnUbAAAAAElFTkSuQmCC" />
+</svg>
+                                </span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="nav__bottom">
+                        <div class="nav__button">
+                            <a href="#" class="btn btn--red">пройти тест</a>
+                            <a href="#" class="btn btn--white">каталог товаров</a>
+                        </div>
+                        <div class="nav__number">
+                            <a href="tel:+38 (099) 375-59-16" class="number__link">+38 (099) 375-59-16</a>
+                            <a href="tel:+38 (063) 940-75-43" class="number__link">+38 (063) 940-75-43</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-stat">
+        <div class="container">
+            <div class="stat">
+                <div class="stat__column">
+                    <div class="stat__block">
+                        <span class="number">7</span>
+                        <p class="number-ph">лет успешной работы</p>
+                    </div>
+                    <div class="stat__block">
+                        <span class="number">1387</span>
+                        <p class="number-ph">успешных проектов</p>
+                    </div>
+                    <div class="stat__block">
+                        <span class="number">400</span>
+                        <p class="number-ph">доставок в год</p>
+                    </div>
+                    <div class="stat__block">
+                        <span class="number">1087</span>
+                        <p class="number-ph">довольных клиентов</p>
+                    </div>
+                </div>
+                <p class="paragraph">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько
+                    абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык
+                    публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный
+                    универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений
+                    в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового
+                    восприятия.</p>
+                <div class="image__wrap">
+                    <div class="image__block">
+                        <img class="image__icon" src="img/gallery-1.png" alt="">
+                    </div>
+                    <div class="image__block">
+                        <img class="image__icon" src="img/gallery-2.png" alt="">
+                    </div>
+                    <div class="image__block">
+                        <img class="image__icon" src="img/gallery-3.png" alt="">
+                    </div>
+                    <div class="image__block">
+                        <img class="image__icon" src="img/gallery-1.png" alt="">
+                    </div>
+                </div>
+                <p class="paragraph paragraph--2">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему
+                    оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы
+                    использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом
+                    от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым
+                    для визуально-слухового восприятия.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-partner">
+        <div class="container">
+            <div class="partner">
+                <p class="heading-tertiary">Партнеры</p>
+
+                <ul class="partner__list">
+                    <li class="partner__item">
+                        <img class="partner__img" src="img/logo-1.png" alt="Logo-1">
+                    </li>
+                    <li class="partner__item">
+                        <img class="partner__img partner__img--long" src="img/logo-2.png" alt="Logo-2">
+                    </li>
+                    <li class="partner__item">
+                        <img class="partner__img partner__img--height" src="img/logo-3.png" alt="Logo-3">
+                    </li>
+                    <li class="partner__item">
+                        <img class="partner__img" src="img/logo-4.png" alt="Logo-4">
+                    </li>
+                    <li class="partner__item">
+                        <img class="partner__img" src="img/logo-5.png" alt="Logo-5">
+                    </li>
+                    <li class="partner__item">
+                        <img class="partner__img partner__img--long" src="img/logo-6.png" alt="Logo-6">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-works">
+        <div class="container">
+            <div class="works">
+                <p class="heading-tertiary">Наши работы</p>
+
+                <div class="works-box">
+                    <figure class="works__icon">
+                            <img src="img/works-1.png" alt="House#1" class="works__img">
+                        <figcaption class="works__figcaption">
+                            <span class="works__date">21.03.2011</span>
+                            <p class="paragraph--small">Название проекта</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="works__icon">
+                        <img src="img/works-2.png" alt="House#2" class="works__img">
+                        <figcaption class="works__figcaption">
+                            <span class="works__date">21.03.2011</span>
+                            <p class="paragraph--small">Название проекта</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="works__icon">
+                        <img src="img/works-3.png" alt="House#3" class="works__img">
+                        <figcaption class="works__figcaption">
+                            <span class="works__date">21.03.2011</span>
+                            <p class="paragraph--small">Название проекта</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="works__icon">
+                        <img src="img/works-4.png" alt="House#4" class="works__img">
+                        <figcaption class="works__figcaption">
+                            <span class="works__date">21.03.2011</span>
+                            <p class="paragraph--small">Название проекта</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="works__icon">
+                        <img src="img/works-4.png" alt="House#5" class="works__img">
+                        <figcaption class="works__figcaption">
+                            <span class="works__date">21.03.2011</span>
+                            <p class="paragraph--small">Название проекта</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="works__icon">
+                        <img src="img/works-6.png" alt="House#6" class="works__img">
+                        <figcaption class="works__figcaption">
+                            <span class="works__date">21.03.2011</span>
+                            <p class="paragraph--small">Название проекта</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="works__icon">
+                        <img src="img/works-7.png" alt="House#7" class="works__img">
+                        <figcaption class="works__figcaption">
+                            <span class="works__date">21.03.2011</span>
+                            <p class="paragraph--small">Название проекта</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="works__icon">
+                        <img src="img/works-8.png" alt="House#8" class="works__img">
+                        <figcaption class="works__figcaption">
+                            <span class="works__date">21.03.2011</span>
+                            <p class="paragraph--small">Название проекта</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-delivery">
+        <div class="container">
+            <div class="delivery">
+                <p class="heading-tertiary">Оплата и доставка</p>
+
+                <div class="delivery-box">
+                    <div class="delivery__left">
+                        <p class="paragraph--small">
+                            Cделать предоплату на Ваш заказ можно несколькими способами:
+                        </p>
+                        <ul class="delivery__list">
+                            <li class="delivery__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="26px" height="42px">
+                                    <image  x="0px" y="0px" width="26px" height="42px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAqCAMAAACa7rtRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABj1BMVEX///+WACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACj////V/z85AAAAg3RSTlMAAAaK1+DfuTHsDpxg+EdJ3lDBBFz+plk4jm/37/ADjClkbAgauOkY4mqq+iAXxZVTw4VK5T6kV9G6WB2JQV8NQMg2vAcQ2d0W81XCAfZCcv3nLhWgOaW7MvEw6BLrSH3kIbZ4Gc6iFNZz2z/L2q0JobCLgVKj7lbNC6fEYkQn7eqvaPZ6wUMAAAABYktHRACIBR1IAAAAB3RJTUUH4gsTCwILC5WNogAAAZtJREFUOMtt1GdbwjAQAOAEURERRUSqDHFPxD1wgHvvvffeew+8P25CSbkU7kOTy9s8T3JJSwwpxlQUaekmIiIFdJFhFmTkaaZFjSyeWAWl8iybqpHDExumXHuM8hwy5TsNbFQpUNjTVOjCZOHv293gjs71JCVvcqJKkUKTk6+4JLs0GZWV81VXOBOpsipWieoEqhFFqq3Tkd8B9UYINDQCNOmoGVpa2xrt7ZUd0KmjIOR3dff0QigMfTrqBxgYHBoeGXVAG6MgIi8rsWeMLR6ggZGnB61wXD1DN0xMMoKpabTlmVmYs1I6v8D3pZlaKNPiUuzIOMGUgstLJ5dXVgXB2jqmdYCNTUGw5UO0zQZ2NILdPUb7B4fRA2P5UZzgOHpt5vyMTlhn1hynU/WynfFp56xzEadLcsWba5vtht6yzl2c7kkg1gvTB948arRNQk/PHh4vtDi6oVpBh4RqYZW+ijWCyCfRK6Y3id4xUTemB4k+MH1KVIjpS6IFF6JviWgAUalM/h9NfolMNIi3JRONCIok0J/4tfwR8g8oIutq7NpHpAAAAABJRU5ErkJggg==" />
+                                </svg>
+                                <span class="delivery__desc">Наличными в нашем офисе по адресу: г. Одесса, ул. Старопортофранковская, 55, Полиграфический центр “Рекламный квартал”</span>
+                            </li>
+                            <li class="delivery__item">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="40px" height="36px">
+                                    <image  x="0px" y="0px" width="40px" height="36px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAMAAADM4ogkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACXlBMVEWWACj///+WACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACj///+G4nrgAAAAyHRSTlMAAIrfypVdJwE877mDSxZwqHE6CZf8zWApAovxu4ZPGFyU+uGhIQc4b6XbvxNJgLfs4A8kWpHI+cPzqnQKHgU1a6PZnSrPmGIrNn7F/bERR3zyrro5lv7OhT4EC8vqpO3Sm2UtA8IzFMf0wFQscvjimlI7gkBOnOP3HGOsF3YN15BICESN1EzV2B8mbrX28GSgap/e+xlpMHjoojR5Mb3uUHW2L45FdwbWVyDkMkoViRuzQ4zJvvUQbbTnWUFnDIfpWOYl0dMaqzWasbMAAAABYktHRAH/Ai3eAAAAB3RJTUUH4gsTCwUVvtsmBgAAAqRJREFUOMt91Ps/U2EcB/DzuO2MJDOxXMqldTHVxtwaKkmEWIykWrVSq0SSkFUk1cJCROmmRveLKN3vff+snnPOdp6zs6PPD9tee97P6/U83+/3HIoSxMfXzz9ARiOpCJ0c2AQGLQhe+F8YAiS+i0IVYfNBJXgmfLEyIlIlAZcEgneiomNil4ogRcuWxfnFS+iExOWUOEi9YuWq1V40yRuy0SSvWbtOCLUCohNANimp+rR0F8wgTpWpzVovN/BMl8185uRu2LgJwzwCN3Mlyd9SsFWlKizaVgwl7j2l28tiCYwgB8rExys37oAKyYJXEmiqqt5ZgwohbpcUrHWp3XsCuE6r9kKxed/+AxYPaAhmCh1+sOyQu2eo7jC384jV52gpB48dj64HONHQqHOXx3Kyyc/EqHKjlvk6hSi6+XQLwJmg0Ei+4K1t7XzXqxE62wEmG6L0AOfOXwhzH6Gz62K3sCOX8MZc6MFnbLl8hb/PVfu1Xp70tfc7AJjBuQ4DGGb0WVhki1UOkvrUNsnxZZNh6AaGAzCMYREoKHrkppVM1+hYah13JUM9M7whgXALw0IwJo7yaMh6e1zwcN3h/k3PwdBylzwnyns24fQgdJ9bSGMLnsX+7n1gl4nHDKEJDpaxsA2g++GjTs/BdYUe7VGE5jknWZgNDu8Jd2cM3E84XppKmB8GwGMC9SCjngyXPH3mBS0VDdBP4HOwv2Cq+NITvirIwh03lxJoSH9dE4VhPoHqN9Nm3J+3TQp+6Ji1mdlJI1OFdxxMeT83C/DB8VEjfvd0wKfPAFMxKor60uyPOx6f5BwRv/wYOA5fJxuzKXrCOYPPOljZbJvn/Uh/q6I03x0/cH/m7D+RdNgLNMCvYoDf011qcR1F8E9Swt+CVqmCk/wD6Ypx0qTKficAAAAASUVORK5CYII=" />
+                                </svg>
+                                <span class="delivery__desc">VISA/MASTERCARD - оплата пластиковой картой через ПриватБанк или систему LiqPay;</span>
+                            </li>
+                            <li class="delivery__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="34px" height="29px">
+                                    <image  x="0px" y="0px" width="34px" height="29px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAdCAMAAAD4tU6IAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAulBMVEWWACj///+WACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACj///8eijrKAAAAPHRSTlMAABFkcOBi7m+8r3X4nTogt/J6xLaA+RfOsz3zylYEDm3Y3wwBRru08FoZf+eahLBCO6f6/KY0jx+1dhCPJOhxAAAAAWJLR0QB/wIt3gAAAAd0SU1FB+ILEwsGDh+TvCkAAACtSURBVCjP7dPXDoJAFATQYSn2DjYsqKhYsdf7/9/lYjTGBO7Gd+f5POzczQBCN5joQoMwiY0pYBGl0hnK5vIJxoJBVECRSignECMilWqNbKfOET5PwjV6EQANvKN950OarbaKOC51uj2WoO8NaOiNOAL4Y5smkkyDIJjFk/liSStJ1mEYbuLIdrc/HE/cW0Jyzxe+0fV2V5X21afDn/xO5I4CJtGOlGuUn6fc9ANcCkztDMexNAAAAABJRU5ErkJggg==" />
+                                </svg>
+                                <span class="delivery__desc">Приват24 - самый распространенный интернет-банкинг</span>
+                            </li>
+                            <li class="delivery__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="21px" height="43px">
+                                    <image  x="0px" y="0px" width="21px" height="43px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAArCAMAAACguTN5AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA81BMVEX///+WACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACj////etME9AAAAT3RSTlMAY/IF9xD18Pb8UGDA39Di9P3U2Mmwzuz7zDDz5JD5FCC/rLO6lL6cnkBkwetEmI+Xfg5wVq6Asm3vZUhnfFl3GIJ4c4suYgTj0Xl0pgbgXO1TzwAAAAFiS0dEAIgFHUgAAAAHdElNRQfiCxMLCgq0Szc8AAABBUlEQVQoz73SaU/CQBAG4IGCa+my4rGClUo98L6gWpVDVMATef//v3EgodpuPxhDnGTSzJNmjmSJMlnEI5shsnJIRs6iPH8WhFi0hRDgtLnOT7VA5EgiEpzyT1pUaqmklFrmLEW6IuWqkFLanGKO09KvWNN6vay1rnCW5zgtGd+64brupqHTDr/Uqud5W4amT4trTZtRIx/bwA433cVeff/gEFz7rC5wxAsUcHyC0zNwPdHzmV5wy0ugwdoMroDrMAxvcHsHtIB20OSfoi06Xje8n2xAP7Xn0MOjoc5TfzA09JleeHhSX/mRvBka3ZvQ4Xua+kE9VYN/1I/RaKaf49gRY4voC1wBobBoyixgAAAAAElFTkSuQmCC" />
+                                </svg>
+                                <span class="delivery__desc">Терминалы ПриватБанка - оплата наличными в любом терминале</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="delivery__right">
+                        <div class="delivery__icon">
+                            <img src="img/delivery-1.png" alt="Delivery photo" class="delivery__img">
+                        </div>
+                    </div>
+                </div>
+                <p class="delivery__desc">Ваш заказ Вы можете забрать по адресу ул. Старопортофранковская, 55. Если Вы находитесь не в Одессе, а в любом другом городе или городке Украины, мы отправим Ваш заказ курьерской службой НОВАЯ ПОЧТА в ближайшее для Вас отделение.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-calc">
+        <div class="container">
+            <p class="heading-quaternary"><span>закажите</span>бесплатный расчет</p>
+            <div class="calc__wrap">
+                <div class="calc__form">
+                    <form action="" class="form">
+                        <div class="form__group">
+                            <label for="name" class="form__label">введите имя:</label>
+                            <input type="text" class="form__input" placeholder="введите имя..." id="name" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="tele" class="form__label">введите телефон:</label>
+                            <input type="tel" class="form__input" placeholder="+380..." id="tele" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="button" class="form__label">Мы с вами свяжемся в течении 10 минут</label>
+                            <button class="btn btn--dark" id="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="calc__address">
+                    <address>
+                        <p class="paragraph paragraph--address">Одесса, ул. Прохоровская, 24</p>
+                        <p class="paragraph paragraph--address">E-mail: d-t-f@ukr.net</p>
+                    </address>
+                    <time>
+                        <p class="paragraph paragraph--address">время работы</p>
+                        <span>пн-пт 9:00 - 18:00</span>
+                        <span>сб-вс выходной</span>
+                    </time>
+                </div>
+                <div class="calc__map">
+                    <div id="map">
+                        <iframe src="https://google.com/maps/embed/v1/place?key=AIzaSyAOudis10tVOU-z5eUh_EM1gp_EYf1C-xM&amp;q=Одесса+Парк Шевченко+Украина" width="100%" height="100%" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <nav class="header__block footer__block">
+            <div class="header__logo">
+                <img src="img/logo-header.png" alt="Logo">
+            </div>
+            <div class="header__right">
+                <div class="nav__top">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">о компании</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">услуги</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">блог</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <span class="socials__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            width="10px" height="20px">
+<image  x="0px" y="0px" width="10px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAMAAACDMFxkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAATlBMVEX///8wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ03///9ZA/a/AAAAGHRSTlMAI6fssBjpfqnxlJBjk0JgzsFwTZqBYYBr85CpAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+ILFQ01LB9+u5MAAABLSURBVAjXY2BgYGBkYpaQkGABsljZJCSgTHYJOJMDSHNycfMAmSxAJi8DGICY3CAGH78AkCkoJCQMFgMDEQRTFMEUg2oTR5hASyYAbuwJxVwRPP4AAAAASUVORK5CYII=" />
+</svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <span class="socials__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            width="20px" height="20px">
+<image  x="0px" y="0px" width="20px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEX///+WACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACiWACj///+GxWK9AAAADnRSTlMAN7z0+u5A7ffCkAwizUsTtE8AAAABYktHRACIBR1IAAAAB3RJTUUH4gsVDTcFb/pBfQAAAGNJREFUCNdjYFR+BwZGAgwi76DAkUEPxnzEYAdhPH33mAEq9qzuHZjZOQNEgpiv9pxeB2Wuuff2FIT5Yu+7d7f7wMyX5969ezMPnYmkAEkbsmFIVkABzDnvgM5BciSS0xEeAgCMRqbYjO3DmAAAAABJRU5ErkJggg==" />
+</svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <span class="socials__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="21px">
+<image  x="0px" y="0px" width="27px" height="21px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAVCAMAAACAAGUXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAb1BMVEUwQ03///8wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ00wQ03///8USF7kAAAAI3RSTlMAAAJXobAEs3fc7u3QG70BdPkv1giTSepl9BSvRuaPLdLz+FugwNcAAAABYktHRAH/Ai3eAAAAB3RJTUUH4gsVDTgl0wx9egAAAGtJREFUKM990kkOgCAUA9CiKOI8zzP3v6NLjVq6InnJD58COK70vpGuI+Ar8x/lIzAsATQ1jfscRi98WJyk3JDlBTWgrLihbrhBtB23fmA2TnTmvLC71Cvdb9vp7sfJ3+wTaw+2/my9W/7LBS3+P1sUdnUbAAAAAElFTkSuQmCC" />
+</svg>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__bottom">
+                    <div class="nav__button">
+                        <a href="#" class="btn btn--red">пройти тест</a>
+                        <a href="#" class="btn btn--white">каталог товаров</a>
+                    </div>
+                    <div class="nav__number">
+                        <a href="tel:+38 (099) 375-59-16" class="number__link">+38 (099) 375-59-16</a>
+                        <a href="tel:+38 (063) 940-75-43" class="number__link">+38 (063) 940-75-43</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

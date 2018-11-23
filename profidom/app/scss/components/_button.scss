@@ -1,0 +1,88 @@
+.btn,
+.btn:link,
+.btn:visited {
+  font-family: "Azoft Sans Bold", sans-serif;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  transition: transform .3s;
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(#000, 0.2);
+  }
+
+  @media screen and (max-width: 780px) {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.3rem;
+    padding: .5rem 4rem;
+    text-align: center;
+  }
+}
+
+.btn--red {
+  background-color: $blood-color;
+  color: $white;
+  padding: 1.5rem 2.5rem;
+  border: 1px solid $blood-color;
+
+  @media screen and (max-width: 780px) {
+    margin-right: 5%;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-right: 5%;
+  }
+
+  &:hover {
+    color: $blood-color;
+    background-color: $white;
+  }
+}
+
+.btn--white {
+  color: $blood-color;
+  background-color: $white;
+  padding: 1.5rem 4rem;
+  border: 1px solid $blood-color;
+
+  &:hover {
+    background-color: $blood-color;
+    color: $white;
+  }
+}
+
+.btn--dark {
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  color: $white;
+  background-color: #31454A;
+  padding: 1.5rem 6rem;
+  font-family: "Azoft Sans Bold", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: 1px solid transparent;
+
+  @media screen and (max-width: 780px) {
+    padding: 1.5rem 4rem;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.4rem;
+    padding: 1rem 4rem;
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $blood-color;
+    border: 1px solid $blood-color;
+  }
+}
+
