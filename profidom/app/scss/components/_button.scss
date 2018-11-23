@@ -23,6 +23,13 @@
     padding: .5rem 4rem;
     text-align: center;
   }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1rem;
+    padding: .2rem 1rem;
+    text-align: center;
+    border-radius: .5rem;
+  }
 }
 
 .btn--red {
@@ -31,12 +38,20 @@
   padding: 1.5rem 2.5rem;
   border: 1px solid $blood-color;
 
+  @media screen and (max-width: 1180px) {
+    margin-right: 7%;
+  }
+
   @media screen and (max-width: 780px) {
     margin-right: 5%;
   }
 
   @media screen and (max-width: 480px) {
     margin-right: 5%;
+  }
+
+  @media screen and (max-width: 400px) {
+    margin-right: 3%;
   }
 
   &:hover {
@@ -50,6 +65,10 @@
   background-color: $white;
   padding: 1.5rem 4rem;
   border: 1px solid $blood-color;
+
+  @media screen and (max-width: 400px) {
+    padding: .2rem 1rem;
+  }
 
   &:hover {
     background-color: $blood-color;

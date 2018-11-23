@@ -43,11 +43,12 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
+    padding: 0 2rem;
   }
 
   @media screen and (max-width: 480px) {
     height: 54rem;
-    padding: 0 .5rem;
+    padding: 0 1.5rem;
   }
 }
 .section-calc {
