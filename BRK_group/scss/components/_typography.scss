@@ -4,6 +4,22 @@
   font-size: 3.8rem;
   color: $white;
   text-transform: uppercase;
+
+  @media screen and (max-width: 980px) {
+    font-size: 3.6rem;
+  }
+
+  @media screen and (max-width: 780px) {
+    font-size: 2.8rem;
+  }
+
+  @media screen and (max-width: 674px) {
+    font-size: 2.2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
+  }
 }
 
 .heading-primary {
@@ -15,6 +31,10 @@
   &--span-1 {
     display: block;
     margin-top: -2rem;
+
+    @media screen and (max-width: 480px) {
+      margin-top: -1rem;
+    }
   }
 
   &--small {
@@ -24,20 +44,32 @@
     display: block;
     padding-left: 30%;
 
+    @media screen and (max-width: 980px) {
+      padding-left: 15%;
+      font-size: 4.2rem;
+      margin-top: -3rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 3.2rem;
+      margin-top: -2rem;
+    }
   }
 
   @media screen and (max-width: 1024px) {
-    font-size: 5.6rem;
-    margin-bottom: 8rem;
+    font-size: 11rem;
+  }
+
+  @media screen and (max-width: 980px) {
+    font-size: 9.8rem;
   }
 
   @media screen and (max-width: 780px) {
-    font-size: 4rem;
+    font-size: 8rem;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 2.4rem;
-    margin-bottom: 5rem;
+    font-size: 6rem;
   }
 }
 

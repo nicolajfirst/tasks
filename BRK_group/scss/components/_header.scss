@@ -5,10 +5,18 @@
 
 .heading-wrap {
   margin-top: 12rem;
+
+  @media screen and (max-width: 674px) {
+    margin-top: 5rem;
+  }
 }
 
 .logo {
   width: 85%;
+
+  @media screen and (max-width: 480px) {
+    width: 95%;
+  }
 
   & svg {
     width: 100%;
@@ -38,6 +46,14 @@
     background-color: $white;
     width: 24%;
     position: relative;
+
+    @media screen and (max-width: 780px) {
+      width: 30%;
+    }
+
+    @media screen and (max-width: 674px) {
+      width: 33%;
+    }
   }
 
   &__icons {
@@ -55,27 +71,67 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+
   }
 
   &__right {
-    width: 100%;
+    width: 76%;
     display: flex;
+
+    @media screen and (max-width: 780px) {
+      width: 70%;
+    }
+
+    @media screen and (max-width: 674px) {
+      width: 67%;
+    }
   }
 
   &__empty {
     width: 41.4%;
+    background-color: #0000004a;
+
+    @media screen and (max-width: 1100px) {
+      width: 20%;
+    }
+
+    @media screen and (max-width: 980px) {
+      width: 15%;
+    }
+
+    @media screen and (max-width: 674px) {
+      width: 10%;
+    }
   }
 
   &__full {
     width: 58.6%;
     padding: 2rem 4% 2rem 1%;
     position: relative;
+    background-color: #0000004a;
+
+    @media screen and (max-width: 1100px) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 980px) {
+      width: 85%;
+    }
+
+    @media screen and (max-width: 674px) {
+      width: 90%;
+    }
   }
 
   &__list {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media screen and(max-width: 674px) {
+      display: none;
+    }
   }
 
   &__item {
@@ -92,10 +148,76 @@
     border-top: 14px solid transparent;
     transition: all .3s;
 
+    @media screen and (max-width: 1100px) {
+      font-size: 1.8rem;
+    }
+
+    @media screen and (max-width: 980px) {
+      font-size: 1.7rem;
+    }
+
+    @media screen and (max-width: 780px) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 674px) {
+      font-size: 1.8rem;
+      display: block;
+      padding: 5.1% 0;
+      border: 1px solid $white;
+      background-color: #7392A5;
+      border-top: 2px solid transparent;
+
+      &:hover {
+        border-top: 2px solid $blue;
+      }
+    }
+
     &:hover {
       border-top: 14px solid $blue;
     }
   }
+
+  /* _________HAMBURGER__________*/
+
+  &__burger {
+    padding: 5% 3%;
+    cursor: pointer;
+    background-color: rgba(#000, .4);
+    display: none;
+
+    @media screen and(max-width: 674px) {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__strip {
+    width: 18px;
+    height: 2px;
+    background-color: $white;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: inherit;
+      position: relative;
+    }
+    &::before {
+      top: -.6rem;
+    }
+    &::after {
+      bottom: -.5rem;
+    }
+  }
+
+
+
 }
 
 .nav {
@@ -105,6 +227,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and(max-width: 674px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 
@@ -113,6 +244,17 @@
   justify-content: space-between;
   width: 100%;
   padding: 4rem 13%;
+
+  @media screen and (max-width: 780px) {
+    padding: 3rem 8%;
+    flex-wrap: wrap;
+    height: 15rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 1rem 8%;
+    height: 13rem;
+  }
 
   &__link {
     width: 100%;
@@ -124,6 +266,10 @@
     & svg {
       width: 70%;
       height: auto;
+
+      @media screen and (max-width: 480px) {
+        width: 60%;
+      }
     }
 
     & svg image {
@@ -142,14 +288,41 @@
   right: 0;
   @include center-flex;
 
+  @media screen and (max-width: 980px) {
+    width: 37%;
+    height: 12%;
+  }
+
+  @media screen and (max-width: 780px) {
+    width: 30%;
+    height: 10%;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 45%;
+  }
+
+  @media screen and (max-width: 400px) {
+    height: 8%;
+  }
 
   &__link {
     display: block;
-    width: 6rem;
-    height: 6rem;
+    width: 20%;
+    height: 68%;
     background-color: $blue;
     position: relative;
     box-shadow: 0 1rem 1.5rem rgba(#000, .2);
+
+    @media screen and (max-width: 780px) {
+      width: 25%;
+      height: 60%;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 20%;
+      height: 55%;
+    }
 
     &:not(:last-child) {
       margin-right: 2.2rem;
@@ -158,8 +331,19 @@
     & svg {
       display: block;
       @include abcCenter;
+
+      @media screen and (max-width: 780px) {
+        width: 80%;
+        height: auto;
+      }
+    }
+
+    & svg image {
+
+      @media screen and (max-width: 780px) {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
-
-
