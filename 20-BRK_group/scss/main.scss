@@ -1,0 +1,51 @@
+@import "settings/base";
+@import "settings/variable";
+@import "settings/mixin";
+
+
+@import "components/typography";
+@import "components/header";
+@import "components/button";
+@import "components/welcome";
+
+
+@font-face {
+  font-family: "AvenirNext Regular";
+  src: url("../fonts/AvenirNext-Regular.ttf");
+}
+
+@font-face {
+  font-family: "AvenirNext Bold";
+  src: url("../fonts/AvenirNext-Bold.ttf");
+}
+
+@font-face {
+  font-family: "AvenirNext Medium";
+  src: url("../fonts/AvenirNext-Medium.ttf");
+}
+
+
+body {
+  background-color: $white;
+}
+
+.main-content {
+  position: relative;
+}
+
+.header__right {
+  //background-image: linear-gradient(to right bottom,
+  //        rgba(#000, .3),
+  //        rgba(#000, .3)),
+  //url("../img/ship.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.section-welcome {
+  background: url("../img/welcome-bg.jpg");
+
+  background-size: cover;
+}
+
